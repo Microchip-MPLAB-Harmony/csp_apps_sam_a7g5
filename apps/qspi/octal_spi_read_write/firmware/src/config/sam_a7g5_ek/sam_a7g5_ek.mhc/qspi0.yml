@@ -1,0 +1,39 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: qspi0}
+children:
+- type: Symbols
+  children:
+  - type: Comment
+    attributes: {id: QSPI_CLK_COMMENT}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: text}
+        children:
+        - {type: Value, value: '*** QSPI0 Core Clock Frequency Is Set To 133.333333
+            MHz'}
+  - type: Integer
+    attributes: {id: QSPI_CLK_FREQ}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: qspi0, value: '133333333'}
+  - type: KeyValueSet
+    attributes: {id: QSPI_CPOL}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: qspi0, value: '0'}
+  - type: Boolean
+    attributes: {id: QSPI_DLLCFG_RANGE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: qspi0, value: 'true'}
+- type: ElementPosition
+  attributes: {x: '440', y: '20', id: qspi0}
