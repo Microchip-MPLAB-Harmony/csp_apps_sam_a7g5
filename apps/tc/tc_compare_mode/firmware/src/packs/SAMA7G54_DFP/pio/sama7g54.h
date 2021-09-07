@@ -1,5 +1,5 @@
-/**
- * \brief Peripheral I/O description for SAMA7G54
+/*
+ * Peripheral I/O description for SAMA7G54
  *
  * Copyright (c) 2021 Microchip Technology Inc. and its subsidiaries.
  *
@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2021-05-08T21:15:36Z */
+/* file generated from device description version 2021-07-26T12:51:16Z */
 #ifndef _SAMA7G54_GPIO_H_
 #define _SAMA7G54_GPIO_H_
 
@@ -2306,72 +2306,72 @@
 #define MUX_PE2C_TC0_TIOB2                         _L_(2)       /**< TC0 signal line function value: TC0_TIOB2 */
 #define PIO_PE2C_TC0_TIOB2                         (_U_(1) << 2) /**< TC0 signal: TC0_TIOB2 */
 /* ========== PIO definition for TC1 peripheral ========== */
-#define PIN_PB31D_TC1_TCLK3                        _L_(63)      /**< TC1 signal: TC1_TCLK3 on PB31 mux D */
-#define MUX_PB31D_TC1_TCLK3                        _L_(3)       /**< TC1 signal line function value: TC1_TCLK3 */
-#define PIO_PB31D_TC1_TCLK3                        (_U_(1) << 31) /**< TC1 signal: TC1_TCLK3 */
-#define PIN_PD13E_TC1_TCLK3                        _L_(109)     /**< TC1 signal: TC1_TCLK3 on PD13 mux E */
-#define MUX_PD13E_TC1_TCLK3                        _L_(4)       /**< TC1 signal line function value: TC1_TCLK3 */
-#define PIO_PD13E_TC1_TCLK3                        (_U_(1) << 13) /**< TC1 signal: TC1_TCLK3 */
-#define PIN_PE6C_TC1_TCLK3                         _L_(134)     /**< TC1 signal: TC1_TCLK3 on PE6 mux C */
-#define MUX_PE6C_TC1_TCLK3                         _L_(2)       /**< TC1 signal line function value: TC1_TCLK3 */
-#define PIO_PE6C_TC1_TCLK3                         (_U_(1) << 6) /**< TC1 signal: TC1_TCLK3 */
-#define PIN_PC2D_TC1_TCLK4                         _L_(66)      /**< TC1 signal: TC1_TCLK4 on PC2 mux D */
-#define MUX_PC2D_TC1_TCLK4                         _L_(3)       /**< TC1 signal line function value: TC1_TCLK4 */
-#define PIO_PC2D_TC1_TCLK4                         (_U_(1) << 2) /**< TC1 signal: TC1_TCLK4 */
-#define PIN_PD16E_TC1_TCLK4                        _L_(112)     /**< TC1 signal: TC1_TCLK4 on PD16 mux E */
-#define MUX_PD16E_TC1_TCLK4                        _L_(4)       /**< TC1 signal line function value: TC1_TCLK4 */
-#define PIO_PD16E_TC1_TCLK4                        (_U_(1) << 16) /**< TC1 signal: TC1_TCLK4 */
-#define PIN_PC5D_TC1_TCLK5                         _L_(69)      /**< TC1 signal: TC1_TCLK5 on PC5 mux D */
-#define MUX_PC5D_TC1_TCLK5                         _L_(3)       /**< TC1 signal line function value: TC1_TCLK5 */
-#define PIO_PC5D_TC1_TCLK5                         (_U_(1) << 5) /**< TC1 signal: TC1_TCLK5 */
-#define PIN_PD19E_TC1_TCLK5                        _L_(115)     /**< TC1 signal: TC1_TCLK5 on PD19 mux E */
-#define MUX_PD19E_TC1_TCLK5                        _L_(4)       /**< TC1 signal line function value: TC1_TCLK5 */
-#define PIO_PD19E_TC1_TCLK5                        (_U_(1) << 19) /**< TC1 signal: TC1_TCLK5 */
-#define PIN_PB29D_TC1_TIOA3                        _L_(61)      /**< TC1 signal: TC1_TIOA3 on PB29 mux D */
-#define MUX_PB29D_TC1_TIOA3                        _L_(3)       /**< TC1 signal line function value: TC1_TIOA3 */
-#define PIO_PB29D_TC1_TIOA3                        (_U_(1) << 29) /**< TC1 signal: TC1_TIOA3 */
-#define PIN_PD11E_TC1_TIOA3                        _L_(107)     /**< TC1 signal: TC1_TIOA3 on PD11 mux E */
-#define MUX_PD11E_TC1_TIOA3                        _L_(4)       /**< TC1 signal line function value: TC1_TIOA3 */
-#define PIO_PD11E_TC1_TIOA3                        (_U_(1) << 11) /**< TC1 signal: TC1_TIOA3 */
-#define PIN_PE4C_TC1_TIOA3                         _L_(132)     /**< TC1 signal: TC1_TIOA3 on PE4 mux C */
-#define MUX_PE4C_TC1_TIOA3                         _L_(2)       /**< TC1 signal line function value: TC1_TIOA3 */
-#define PIO_PE4C_TC1_TIOA3                         (_U_(1) << 4) /**< TC1 signal: TC1_TIOA3 */
-#define PIN_PC0D_TC1_TIOA4                         _L_(64)      /**< TC1 signal: TC1_TIOA4 on PC0 mux D */
-#define MUX_PC0D_TC1_TIOA4                         _L_(3)       /**< TC1 signal line function value: TC1_TIOA4 */
-#define PIO_PC0D_TC1_TIOA4                         (_U_(1) << 0) /**< TC1 signal: TC1_TIOA4 */
-#define PIN_PD14E_TC1_TIOA4                        _L_(110)     /**< TC1 signal: TC1_TIOA4 on PD14 mux E */
-#define MUX_PD14E_TC1_TIOA4                        _L_(4)       /**< TC1 signal line function value: TC1_TIOA4 */
-#define PIO_PD14E_TC1_TIOA4                        (_U_(1) << 14) /**< TC1 signal: TC1_TIOA4 */
-#define PIN_PE7C_TC1_TIOA4                         _L_(135)     /**< TC1 signal: TC1_TIOA4 on PE7 mux C */
-#define MUX_PE7C_TC1_TIOA4                         _L_(2)       /**< TC1 signal line function value: TC1_TIOA4 */
-#define PIO_PE7C_TC1_TIOA4                         (_U_(1) << 7) /**< TC1 signal: TC1_TIOA4 */
-#define PIN_PC3D_TC1_TIOA5                         _L_(67)      /**< TC1 signal: TC1_TIOA5 on PC3 mux D */
-#define MUX_PC3D_TC1_TIOA5                         _L_(3)       /**< TC1 signal line function value: TC1_TIOA5 */
-#define PIO_PC3D_TC1_TIOA5                         (_U_(1) << 3) /**< TC1 signal: TC1_TIOA5 */
-#define PIN_PD17E_TC1_TIOA5                        _L_(113)     /**< TC1 signal: TC1_TIOA5 on PD17 mux E */
-#define MUX_PD17E_TC1_TIOA5                        _L_(4)       /**< TC1 signal line function value: TC1_TIOA5 */
-#define PIO_PD17E_TC1_TIOA5                        (_U_(1) << 17) /**< TC1 signal: TC1_TIOA5 */
-#define PIN_PB30D_TC1_TIOB3                        _L_(62)      /**< TC1 signal: TC1_TIOB3 on PB30 mux D */
-#define MUX_PB30D_TC1_TIOB3                        _L_(3)       /**< TC1 signal line function value: TC1_TIOB3 */
-#define PIO_PB30D_TC1_TIOB3                        (_U_(1) << 30) /**< TC1 signal: TC1_TIOB3 */
-#define PIN_PD12E_TC1_TIOB3                        _L_(108)     /**< TC1 signal: TC1_TIOB3 on PD12 mux E */
-#define MUX_PD12E_TC1_TIOB3                        _L_(4)       /**< TC1 signal line function value: TC1_TIOB3 */
-#define PIO_PD12E_TC1_TIOB3                        (_U_(1) << 12) /**< TC1 signal: TC1_TIOB3 */
-#define PIN_PE5C_TC1_TIOB3                         _L_(133)     /**< TC1 signal: TC1_TIOB3 on PE5 mux C */
-#define MUX_PE5C_TC1_TIOB3                         _L_(2)       /**< TC1 signal line function value: TC1_TIOB3 */
-#define PIO_PE5C_TC1_TIOB3                         (_U_(1) << 5) /**< TC1 signal: TC1_TIOB3 */
-#define PIN_PC1D_TC1_TIOB4                         _L_(65)      /**< TC1 signal: TC1_TIOB4 on PC1 mux D */
-#define MUX_PC1D_TC1_TIOB4                         _L_(3)       /**< TC1 signal line function value: TC1_TIOB4 */
-#define PIO_PC1D_TC1_TIOB4                         (_U_(1) << 1) /**< TC1 signal: TC1_TIOB4 */
-#define PIN_PD15E_TC1_TIOB4                        _L_(111)     /**< TC1 signal: TC1_TIOB4 on PD15 mux E */
-#define MUX_PD15E_TC1_TIOB4                        _L_(4)       /**< TC1 signal line function value: TC1_TIOB4 */
-#define PIO_PD15E_TC1_TIOB4                        (_U_(1) << 15) /**< TC1 signal: TC1_TIOB4 */
-#define PIN_PC4D_TC1_TIOB5                         _L_(68)      /**< TC1 signal: TC1_TIOB5 on PC4 mux D */
-#define MUX_PC4D_TC1_TIOB5                         _L_(3)       /**< TC1 signal line function value: TC1_TIOB5 */
-#define PIO_PC4D_TC1_TIOB5                         (_U_(1) << 4) /**< TC1 signal: TC1_TIOB5 */
-#define PIN_PD18E_TC1_TIOB5                        _L_(114)     /**< TC1 signal: TC1_TIOB5 on PD18 mux E */
-#define MUX_PD18E_TC1_TIOB5                        _L_(4)       /**< TC1 signal line function value: TC1_TIOB5 */
-#define PIO_PD18E_TC1_TIOB5                        (_U_(1) << 18) /**< TC1 signal: TC1_TIOB5 */
+#define PIN_PB31D_TC1_TCLK0                        _L_(63)      /**< TC1 signal: TC1_TCLK0 on PB31 mux D */
+#define MUX_PB31D_TC1_TCLK0                        _L_(3)       /**< TC1 signal line function value: TC1_TCLK0 */
+#define PIO_PB31D_TC1_TCLK0                        (_U_(1) << 31) /**< TC1 signal: TC1_TCLK0 */
+#define PIN_PD13E_TC1_TCLK0                        _L_(109)     /**< TC1 signal: TC1_TCLK0 on PD13 mux E */
+#define MUX_PD13E_TC1_TCLK0                        _L_(4)       /**< TC1 signal line function value: TC1_TCLK0 */
+#define PIO_PD13E_TC1_TCLK0                        (_U_(1) << 13) /**< TC1 signal: TC1_TCLK0 */
+#define PIN_PE6C_TC1_TCLK0                         _L_(134)     /**< TC1 signal: TC1_TCLK0 on PE6 mux C */
+#define MUX_PE6C_TC1_TCLK0                         _L_(2)       /**< TC1 signal line function value: TC1_TCLK0 */
+#define PIO_PE6C_TC1_TCLK0                         (_U_(1) << 6) /**< TC1 signal: TC1_TCLK0 */
+#define PIN_PC2D_TC1_TCLK1                         _L_(66)      /**< TC1 signal: TC1_TCLK1 on PC2 mux D */
+#define MUX_PC2D_TC1_TCLK1                         _L_(3)       /**< TC1 signal line function value: TC1_TCLK1 */
+#define PIO_PC2D_TC1_TCLK1                         (_U_(1) << 2) /**< TC1 signal: TC1_TCLK1 */
+#define PIN_PD16E_TC1_TCLK1                        _L_(112)     /**< TC1 signal: TC1_TCLK1 on PD16 mux E */
+#define MUX_PD16E_TC1_TCLK1                        _L_(4)       /**< TC1 signal line function value: TC1_TCLK1 */
+#define PIO_PD16E_TC1_TCLK1                        (_U_(1) << 16) /**< TC1 signal: TC1_TCLK1 */
+#define PIN_PC5D_TC1_TCLK2                         _L_(69)      /**< TC1 signal: TC1_TCLK2 on PC5 mux D */
+#define MUX_PC5D_TC1_TCLK2                         _L_(3)       /**< TC1 signal line function value: TC1_TCLK2 */
+#define PIO_PC5D_TC1_TCLK2                         (_U_(1) << 5) /**< TC1 signal: TC1_TCLK2 */
+#define PIN_PD19E_TC1_TCLK2                        _L_(115)     /**< TC1 signal: TC1_TCLK2 on PD19 mux E */
+#define MUX_PD19E_TC1_TCLK2                        _L_(4)       /**< TC1 signal line function value: TC1_TCLK2 */
+#define PIO_PD19E_TC1_TCLK2                        (_U_(1) << 19) /**< TC1 signal: TC1_TCLK2 */
+#define PIN_PB29D_TC1_TIOA0                        _L_(61)      /**< TC1 signal: TC1_TIOA0 on PB29 mux D */
+#define MUX_PB29D_TC1_TIOA0                        _L_(3)       /**< TC1 signal line function value: TC1_TIOA0 */
+#define PIO_PB29D_TC1_TIOA0                        (_U_(1) << 29) /**< TC1 signal: TC1_TIOA0 */
+#define PIN_PD11E_TC1_TIOA0                        _L_(107)     /**< TC1 signal: TC1_TIOA0 on PD11 mux E */
+#define MUX_PD11E_TC1_TIOA0                        _L_(4)       /**< TC1 signal line function value: TC1_TIOA0 */
+#define PIO_PD11E_TC1_TIOA0                        (_U_(1) << 11) /**< TC1 signal: TC1_TIOA0 */
+#define PIN_PE4C_TC1_TIOA0                         _L_(132)     /**< TC1 signal: TC1_TIOA0 on PE4 mux C */
+#define MUX_PE4C_TC1_TIOA0                         _L_(2)       /**< TC1 signal line function value: TC1_TIOA0 */
+#define PIO_PE4C_TC1_TIOA0                         (_U_(1) << 4) /**< TC1 signal: TC1_TIOA0 */
+#define PIN_PC0D_TC1_TIOA1                         _L_(64)      /**< TC1 signal: TC1_TIOA1 on PC0 mux D */
+#define MUX_PC0D_TC1_TIOA1                         _L_(3)       /**< TC1 signal line function value: TC1_TIOA1 */
+#define PIO_PC0D_TC1_TIOA1                         (_U_(1) << 0) /**< TC1 signal: TC1_TIOA1 */
+#define PIN_PD14E_TC1_TIOA1                        _L_(110)     /**< TC1 signal: TC1_TIOA1 on PD14 mux E */
+#define MUX_PD14E_TC1_TIOA1                        _L_(4)       /**< TC1 signal line function value: TC1_TIOA1 */
+#define PIO_PD14E_TC1_TIOA1                        (_U_(1) << 14) /**< TC1 signal: TC1_TIOA1 */
+#define PIN_PE7C_TC1_TIOA1                         _L_(135)     /**< TC1 signal: TC1_TIOA1 on PE7 mux C */
+#define MUX_PE7C_TC1_TIOA1                         _L_(2)       /**< TC1 signal line function value: TC1_TIOA1 */
+#define PIO_PE7C_TC1_TIOA1                         (_U_(1) << 7) /**< TC1 signal: TC1_TIOA1 */
+#define PIN_PC3D_TC1_TIOA2                         _L_(67)      /**< TC1 signal: TC1_TIOA2 on PC3 mux D */
+#define MUX_PC3D_TC1_TIOA2                         _L_(3)       /**< TC1 signal line function value: TC1_TIOA2 */
+#define PIO_PC3D_TC1_TIOA2                         (_U_(1) << 3) /**< TC1 signal: TC1_TIOA2 */
+#define PIN_PD17E_TC1_TIOA2                        _L_(113)     /**< TC1 signal: TC1_TIOA2 on PD17 mux E */
+#define MUX_PD17E_TC1_TIOA2                        _L_(4)       /**< TC1 signal line function value: TC1_TIOA2 */
+#define PIO_PD17E_TC1_TIOA2                        (_U_(1) << 17) /**< TC1 signal: TC1_TIOA2 */
+#define PIN_PB30D_TC1_TIOB0                        _L_(62)      /**< TC1 signal: TC1_TIOB0 on PB30 mux D */
+#define MUX_PB30D_TC1_TIOB0                        _L_(3)       /**< TC1 signal line function value: TC1_TIOB0 */
+#define PIO_PB30D_TC1_TIOB0                        (_U_(1) << 30) /**< TC1 signal: TC1_TIOB0 */
+#define PIN_PD12E_TC1_TIOB0                        _L_(108)     /**< TC1 signal: TC1_TIOB0 on PD12 mux E */
+#define MUX_PD12E_TC1_TIOB0                        _L_(4)       /**< TC1 signal line function value: TC1_TIOB0 */
+#define PIO_PD12E_TC1_TIOB0                        (_U_(1) << 12) /**< TC1 signal: TC1_TIOB0 */
+#define PIN_PE5C_TC1_TIOB0                         _L_(133)     /**< TC1 signal: TC1_TIOB0 on PE5 mux C */
+#define MUX_PE5C_TC1_TIOB0                         _L_(2)       /**< TC1 signal line function value: TC1_TIOB0 */
+#define PIO_PE5C_TC1_TIOB0                         (_U_(1) << 5) /**< TC1 signal: TC1_TIOB0 */
+#define PIN_PC1D_TC1_TIOB1                         _L_(65)      /**< TC1 signal: TC1_TIOB1 on PC1 mux D */
+#define MUX_PC1D_TC1_TIOB1                         _L_(3)       /**< TC1 signal line function value: TC1_TIOB1 */
+#define PIO_PC1D_TC1_TIOB1                         (_U_(1) << 1) /**< TC1 signal: TC1_TIOB1 */
+#define PIN_PD15E_TC1_TIOB1                        _L_(111)     /**< TC1 signal: TC1_TIOB1 on PD15 mux E */
+#define MUX_PD15E_TC1_TIOB1                        _L_(4)       /**< TC1 signal line function value: TC1_TIOB1 */
+#define PIO_PD15E_TC1_TIOB1                        (_U_(1) << 15) /**< TC1 signal: TC1_TIOB1 */
+#define PIN_PC4D_TC1_TIOB2                         _L_(68)      /**< TC1 signal: TC1_TIOB2 on PC4 mux D */
+#define MUX_PC4D_TC1_TIOB2                         _L_(3)       /**< TC1 signal line function value: TC1_TIOB2 */
+#define PIO_PC4D_TC1_TIOB2                         (_U_(1) << 4) /**< TC1 signal: TC1_TIOB2 */
+#define PIN_PD18E_TC1_TIOB2                        _L_(114)     /**< TC1 signal: TC1_TIOB2 on PD18 mux E */
+#define MUX_PD18E_TC1_TIOB2                        _L_(4)       /**< TC1 signal line function value: TC1_TIOB2 */
+#define PIO_PD18E_TC1_TIOB2                        (_U_(1) << 18) /**< TC1 signal: TC1_TIOB2 */
 
 #endif /* _SAMA7G54_GPIO_H_ */
 

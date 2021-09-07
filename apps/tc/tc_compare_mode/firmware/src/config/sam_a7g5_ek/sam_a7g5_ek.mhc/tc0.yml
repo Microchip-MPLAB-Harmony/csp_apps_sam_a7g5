@@ -145,5 +145,14 @@ children:
       children:
       - type: Dynamic
         attributes: {id: tc0, value: 'false'}
+  - type: Comment
+    attributes: {id: TC_QEI_PERIOD_COMMENT}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: text}
+        children:
+        - {type: Value, value: '****Time Base is 75.075 uS****'}
 - type: ElementPosition
   attributes: {x: '440', y: '20', id: tc0}
