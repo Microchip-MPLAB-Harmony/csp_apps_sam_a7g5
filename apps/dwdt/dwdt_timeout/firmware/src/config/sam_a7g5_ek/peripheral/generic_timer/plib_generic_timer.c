@@ -50,9 +50,9 @@
 #include "plib_generic_timer.h"
 
 #define GENERIC_TIMER_FREQUENCY 24000000U
-#define COMPARE_DELTA_VALUE     12000000U
 
-static const uint64_t compareDelta = COMPARE_DELTA_VALUE;
+static uint64_t compareDelta = 12000000UL;
+
 static struct callbackObject
 {
     GENERIC_TIMER_CALLBACK pCallback;
@@ -65,12 +65,35 @@ void GENERIC_TIMER_Initialize(void)
     PL1_SetCounterFrequency(GENERIC_TIMER_FREQUENCY);
 }
 
-void GENERIC_TIMER_RegisterCallback(GENERIC_TIMER_CALLBACK pCallback, void* pContext)
+
+uint64_t GENERIC_TIMER_CounterValueGet(void)
 {
-    genericTimerCallbackObj.pCallback = pCallback;
-    genericTimerCallbackObj.pContext = pContext;
+    return PL1_GetCurrentPhysicalValue();
 }
 
+
+uint32_t GENERIC_TIMER_CounterFrequencyGet(void)
+{
+    return GENERIC_TIMER_FREQUENCY;
+}
+
+
+void GENERIC_TIMER_DelayUs(uint32_t delay_us)
+{
+    /* System counter is not expected to roll-over between two resets */
+    uint64_t finalCount = GENERIC_TIMER_CounterValueGet() +
+      (uint64_t)((GENERIC_TIMER_FREQUENCY /1000000U) * delay_us);
+    while(GENERIC_TIMER_CounterValueGet() < finalCount);
+}
+
+
+void GENERIC_TIMER_DelayMs(uint32_t delay_ms)
+{
+    /* System counter is not expected to roll-over between two resets */
+    uint64_t finalCount = GENERIC_TIMER_CounterValueGet() +
+      (uint64_t)((GENERIC_TIMER_FREQUENCY /1000U) * delay_ms);
+    while(GENERIC_TIMER_CounterValueGet() < finalCount);
+}
 
 void GENERIC_TIMER_Start(void)
 {
@@ -80,13 +103,36 @@ void GENERIC_TIMER_Start(void)
 }
 
 
+void GENERIC_TIMER_PeriodSet(uint64_t period)
+{
+    uint32_t control = PL1_GetControl();
+    /* Mask Interrupt before updating delta */
+    PL1_SetControl(control & 0x5U);
+    compareDelta = period;
+    PL1_SetControl(control);
+}
+
+
+uint64_t GENERIC_TIMER_PeriodGet(void)
+{
+    return compareDelta;
+}
+
+
 void GENERIC_TIMER_Stop(void)
 {
     PL1_SetControl(2U);
 }
 
 
-void SecPhysTimer_InterruptHandler (void)
+void GENERIC_TIMER_RegisterCallback(GENERIC_TIMER_CALLBACK pCallback, void* pContext)
+{
+    genericTimerCallbackObj.pCallback = pCallback;
+    genericTimerCallbackObj.pContext = pContext;
+}
+
+
+void GENERIC_TIMER_InterruptHandler (void)
 {
     uint64_t currentCompVal = PL1_GetPhysicalCompareValue();
     PL1_SetPhysicalCompareValue(currentCompVal + compareDelta);
@@ -95,3 +141,4 @@ void SecPhysTimer_InterruptHandler (void)
         genericTimerCallbackObj.pCallback(genericTimerCallbackObj.pContext);
     }
 }
+ 

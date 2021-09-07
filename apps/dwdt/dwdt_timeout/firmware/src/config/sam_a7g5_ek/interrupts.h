@@ -57,7 +57,7 @@
 // *****************************************************************************
 // *****************************************************************************
 
-void SecPhysTimer_InterruptHandler (void);
+void GENERIC_TIMER_InterruptHandler (void);
 void DWDT_SW_InterruptHandler (void);
 void PIOA_InterruptHandler (void);
 

@@ -56,11 +56,23 @@ typedef void (*GENERIC_TIMER_CALLBACK) (void* context);
 
 void GENERIC_TIMER_Initialize(void);
 
-void GENERIC_TIMER_RegisterCallback(GENERIC_TIMER_CALLBACK pCallback, void* pContext);
+uint64_t GENERIC_TIMER_CounterValueGet(void);
+
+uint32_t GENERIC_TIMER_CounterFrequencyGet(void);
+
+void GENERIC_TIMER_DelayMs(uint32_t delay_ms);
+
+void GENERIC_TIMER_DelayUs(uint32_t delay_us);
 
 void GENERIC_TIMER_Start(void);
 
+void GENERIC_TIMER_PeriodSet(uint64_t period);
+
+uint64_t GENERIC_TIMER_PeriodGet(void);
+
 void GENERIC_TIMER_Stop(void);
+
+void GENERIC_TIMER_RegisterCallback(GENERIC_TIMER_CALLBACK pCallback, void* pContext);
 
 #ifdef __cplusplus
 }

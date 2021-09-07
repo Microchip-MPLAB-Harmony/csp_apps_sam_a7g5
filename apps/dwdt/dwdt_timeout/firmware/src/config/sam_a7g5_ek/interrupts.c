@@ -236,7 +236,7 @@ peripheral_interrupt_handler_t gicPIVectorTable[171U] =
     HyperVTimer_Handler,
     VirtTimer_Handler,
     LegacynFIQ_Handler,
-    SecPhysTimer_InterruptHandler,
+    GENERIC_TIMER_InterruptHandler,
     NonSecPhysTimer_Handler,
     LegacynIRQ_Handler,
     DWDT_SW_InterruptHandler,

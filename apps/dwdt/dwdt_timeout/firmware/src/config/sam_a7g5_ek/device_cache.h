@@ -54,6 +54,7 @@
 /*  This section Includes other configuration headers necessary to completely
     define this configuration.
 */
+#include "peripheral/mmu/plib_mmu.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -77,16 +78,16 @@ extern "C" {
 #define L1_DCACHE_IN_USE                               true
 #define L1_DCACHE_ENABLE()                             dcache_Enable()
 #define L1_DCACHE_DISABLE()                            dcache_Disable()
-#define L1_DCACHE_CLEAN_ALL()                          L1C_CleanDCacheAll()
-#define L1_DCACHE_INVALIDATE_ALL()                     L1C_InvalidateDCacheAll()
-#define L1_DCACHE_CLEAN_INVALIDATE_ALL()               L1C_CleanInvalidateDCacheAll()
+#define L1_DCACHE_CLEAN_ALL()                          dcache_CleanAll()
+#define L1_DCACHE_INVALIDATE_ALL()                     dcache_InvalidateAll()
+#define L1_DCACHE_CLEAN_INVALIDATE_ALL()               dcache_CleanInvalidateAll()
 
 #define DCACHE_CLEAN_BY_ADDR(addr,sz)                  dcache_CleanByAddr(addr,sz)
 #define DCACHE_INVALIDATE_BY_ADDR(addr,sz)             dcache_InvalidateByAddr(addr,sz)
 #define DCACHE_CLEAN_INVALIDATE_BY_ADDR(addr,sz)       dcache_CleanInvalidateByAddr(addr,sz)
-#define DCACHE_CLEAN_ALL()                             L1C_CleanDCacheAll()
-#define DCACHE_INVALIDATE_ALL()                        L1C_InvalidateDCacheAll()
-#define DCACHE_CLEAN_INVALIDATE_ALL()                  L1C_CleanInvalidateDCacheAll()
+#define DCACHE_CLEAN_ALL()                             dcache_CleanAll()
+#define DCACHE_INVALIDATE_ALL()                        dcache_InvalidateAll()
+#define DCACHE_CLEAN_INVALIDATE_ALL()                  dcache_CleanInvalidateAll()
 //
  
 #define DATA_CACHE_ENABLED                             true   

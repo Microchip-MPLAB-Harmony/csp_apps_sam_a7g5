@@ -116,8 +116,8 @@ int main( void )
     printf( "\r\n-------------------------------------------------------------" );
     printf( "\r\n                          DWDT DEMO" );
     printf( "\r\n-------------------------------------------------------------" );
-    printf( "\r\nFlashing LED indicates process is running\r\nPress SWITCH1 " 
-            "to simulate a deadlock\r\nPress SWITCH2 to simulate repeat "
+    printf( "\r\nFlashing LED indicates process is running\r\nPress SW1 " 
+            "to simulate a deadlock\r\nPress SW4 to simulate repeat "
             "threshold violation\r\n");
     
     uint32_t toggleCount = interruptCounter;

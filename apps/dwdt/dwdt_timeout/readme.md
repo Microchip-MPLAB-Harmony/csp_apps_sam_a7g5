@@ -17,7 +17,7 @@ This example application configures Programmable secure dual watchdog timer (PS-
 
 Pressing switch 1, will emulate a deadlock by not clearing the watchdog. LED will remain turned on. 3 seconds after previous watchdog clear, level interrupt will be generated. 4 second after previous watchdog clear, MCU will be reset. 
 
-Pressing Switch 2 will result in a watchdog clear, if the repeat threshold have not elapsed since the previous watchdog clear, this will result in a repeat threshold violation interrupt. Pressing Switch 2 twice in quick succession will result in a guaranteed repeat threshold violation. 
+Pressing Switch 4 will result in a watchdog clear, if the repeat threshold have not elapsed since the previous watchdog clear, this will result in a repeat threshold violation interrupt. Pressing Switch 4 twice in quick succession will result in a guaranteed repeat threshold violation. 
 
 ## Downloading and building the application
 
@@ -68,7 +68,7 @@ The following table shows the target hardware for the application projects.
 
     ![output](images/output_dwdt_timeout_1.png)
 
-5. Press Switch 2 twice in close succession to emulate a repeat threshold violation (Pressing once may generate the violation however, pressing twice will guarantee it)
+5. Press Switch 4 twice in close succession to emulate a repeat threshold violation (Pressing once may generate the violation however, pressing twice will guarantee it)
 6. Console should update the output as follows:
 
     ![output](images/output_dwdt_timeout_2.png)
@@ -80,3 +80,9 @@ The following table shows the target hardware for the application projects.
     *NOTE: Number of seconds can be between 1 and 4 based on the interval*
 
 9. Processor resets after specified time is elapsed
+
+Refer to the following table for Switch names for different boards:
+
+| Board                      | Switch 1 | Switch 4 |
+| -------------------------- | -------- |--------- |
+| [SAMA7G5 Evaluation Kit]() | SW1      | SW4      |
