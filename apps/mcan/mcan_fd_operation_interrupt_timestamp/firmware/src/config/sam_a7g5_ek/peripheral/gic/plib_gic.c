@@ -56,7 +56,7 @@ static struct {
 }gicIrqConfig[] =
 {
 
-    {MCAN0_INT0_IRQn, GIC_IRQ_CONFIG_EDGE, 0,  GIC_IRQ_GROUP_SECURE},
+    {MCAN0_INT0_IRQn, GIC_IRQ_CONFIG_LEVEL, 0,  GIC_IRQ_GROUP_SECURE},
 };
 
 static sgi_interrupt_handler_t gicSGIHandler = NULL;
