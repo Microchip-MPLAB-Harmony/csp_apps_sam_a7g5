@@ -24,6 +24,7 @@
 #define PLIB_GIC_H
 
 #include <stddef.h>
+#include <stdbool.h>
 #include "device.h"
 
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -35,7 +36,7 @@
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: Data types 
+// Section: Data types
 // *****************************************************************************
 // *****************************************************************************
 typedef void (*sgi_interrupt_handler_t)(uint32_t sgiID, uint32_t cpuID);
@@ -50,6 +51,9 @@ typedef void (*peripheral_interrupt_handler_t)(void);
 void GIC_Initialize(void);
 void GIC_RegisterSGIInterruptHandler(sgi_interrupt_handler_t pHandler);
 void GIC_RegisterPeripheralInterruptHandler(IRQn_Type irqID, peripheral_interrupt_handler_t pHandler);
+void GIC_INT_IrqEnable(void);
+bool GIC_INT_IrqDisable(void);
+void GIC_INT_IrqRestore(bool state);
 
 #ifdef __cplusplus
 }
