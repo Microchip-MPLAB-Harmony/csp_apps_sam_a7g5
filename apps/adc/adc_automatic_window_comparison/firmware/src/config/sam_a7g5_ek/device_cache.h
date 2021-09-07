@@ -54,6 +54,7 @@
 /*  This section Includes other configuration headers necessary to completely
     define this configuration.
 */
+#include "peripheral/mmu/plib_mmu.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility

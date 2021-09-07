@@ -44,7 +44,7 @@
 #define MAX_SGI_INTERRUPT_ID            0x00FU
 #define MAX_PPI_INTERRUPT_ID            0x01FU
 #define MAX_SPI_INTERRUPT_ID            186U
-#define SPURIOUS_INTERRUPT_ID           0x3FFU 
+#define SPURIOUS_INTERRUPT_ID           0x3FFU
 
 extern peripheral_interrupt_handler_t gicPIVectorTable[171U];
 
@@ -56,7 +56,7 @@ static struct {
 }gicIrqConfig[] =
 {
 
-    {PIT64B0_IRQn, GIC_IRQ_CONFIG_EDGE, 0,  GIC_IRQ_GROUP_SECURE},
+    {PIT64B0_IRQn, GIC_IRQ_CONFIG_LEVEL, 0,  GIC_IRQ_GROUP_SECURE},
 };
 
 static sgi_interrupt_handler_t gicSGIHandler = NULL;
@@ -64,7 +64,7 @@ static sgi_interrupt_handler_t gicSGIHandler = NULL;
 void GIC_IRQHandler(uint32_t  iarRegVal)
 {
     uint32_t irqNum = GET_IAR_INTERRUPT_ID(iarRegVal);
-    
+
     /* SGI interrupt, dispatch SGI handler if set */
     if (irqNum <= MAX_SGI_INTERRUPT_ID)
     {
@@ -91,7 +91,7 @@ void GIC_IRQHandler(uint32_t  iarRegVal)
 void GIC_FIQHandler(uint32_t  iarRegVal)
 {
     uint32_t irqNum = GET_IAR_INTERRUPT_ID(iarRegVal);
-    
+
     /* SGI interrupt, dispatch SGI handler if set */
     if (irqNum <= MAX_SGI_INTERRUPT_ID)
     {
@@ -144,6 +144,35 @@ void GIC_Initialize(void)
         GIC_EnableIRQ (gicIrqConfig[i].irqID);
     }
 
-    __enable_irq(); 
-    
+    __enable_irq();
+
+}
+
+void GIC_INT_IrqEnable(void)
+{
+    __DMB();
+    __enable_irq();
+}
+
+bool GIC_INT_IrqDisable(void)
+{
+    /* Add a volatile qualifier to the return value to prevent the compiler from optimizing out this function */
+    volatile bool previousValue = (CPSR_I_Msk & __get_CPSR())? false:true;
+    __disable_irq();
+    __DMB();
+    return previousValue;
+}
+
+void GIC_INT_IrqRestore(bool state)
+{
+    if(state == true)
+    {
+        __DMB();
+        __enable_irq();
+    }
+    else
+    {
+        __disable_irq();
+        __DMB();
+    }
 }
