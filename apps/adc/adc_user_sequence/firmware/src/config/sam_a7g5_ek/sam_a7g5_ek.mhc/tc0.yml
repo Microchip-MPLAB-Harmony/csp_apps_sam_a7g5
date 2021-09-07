@@ -4,15 +4,6 @@ attributes: {id: tc0}
 children:
 - type: Symbols
   children:
-  - type: Comment
-    attributes: {id: TC0_CLK_ENABLE_COMMENT}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
   - type: Integer
     attributes: {id: TC0_CLOCK_FREQ}
     children:
@@ -125,5 +116,14 @@ children:
       children:
       - type: Dynamic
         attributes: {id: tc0, value: 'false'}
+  - type: Comment
+    attributes: {id: TC_QEI_PERIOD_COMMENT}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: text}
+        children:
+        - {type: Value, value: '****Time Base is 75.075 uS****'}
 - type: ElementPosition
   attributes: {x: '30', y: '60', id: tc0}

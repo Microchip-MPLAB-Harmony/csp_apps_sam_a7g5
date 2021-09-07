@@ -136,7 +136,6 @@ void SYS_Initialize ( void* data )
     Matrix_Initialize();
 
 	PIO_Initialize();
-    GENERIC_TIMER_Initialize();
 
 
 
