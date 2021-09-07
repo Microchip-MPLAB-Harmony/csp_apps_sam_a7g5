@@ -55,7 +55,6 @@
 #include "peripheral/mmu/plib_mmu.h"
 #include "peripheral/matrix/plib_matrix.h"
 #include "peripheral/pio/plib_pio.h"
-#include "peripheral/generic_timer/plib_generic_timer.h"
 #include "peripheral/flexcom/usart/plib_flexcom9_usart.h"
 
 // DOM-IGNORE-BEGIN
