@@ -75,6 +75,13 @@ children:
       children:
       - type: User
         attributes: {value: '1'}
+  - type: Integer
+    attributes: {id: QSPI_PCALCFG_CLKDIV}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: qspi0, value: '7999999'}
   - type: KeyValueSet
     attributes: {id: QSPI_SMM}
     children:

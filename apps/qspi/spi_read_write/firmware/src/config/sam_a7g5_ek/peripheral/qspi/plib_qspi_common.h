@@ -149,6 +149,10 @@ typedef struct {
     QSPI_LANE_WIDTH width;
     bool addr_en;
     QSPI_ADDRESS_LENGTH addr_len;
+    /* DDR mode enable */
+    bool ddr_en;
+    /* DDR Mode Command Enable */
+    bool ddr_cmd_en;
     /* Protocol Type */
     QSPI_PROTOCOL_TYPE protocol_type;
 } qspi_command_xfer_t;
@@ -162,6 +166,10 @@ typedef struct {
     QSPI_ADDRESS_LENGTH addr_len;
     /* For Read Register */
     uint8_t dummy_cycles;
+    /* DDR mode enable */
+    bool ddr_en;
+    /* DDR Mode Command Enable */
+    bool ddr_cmd_en;
     /* Protocol Type */
     QSPI_PROTOCOL_TYPE protocol_type;
 } qspi_register_xfer_t;

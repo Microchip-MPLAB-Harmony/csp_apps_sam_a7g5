@@ -57,7 +57,7 @@ void QSPI0_Initialize(void)
 
     // Pad Calibration Configuration
     QSPI0_REGS->QSPI_PCALCFG = (QSPI0_REGS->QSPI_PCALCFG & ~QSPI_PCALCFG_CLKDIV_Msk) |
-                                                QSPI_PCALCFG_CLKDIV(7);
+                                                QSPI_PCALCFG_CLKDIV(7999999);
 
     /* DLL Range */
     QSPI0_REGS->QSPI_DLLCFG = QSPI_DLLCFG_RANGE_Msk;
