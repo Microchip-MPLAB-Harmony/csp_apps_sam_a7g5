@@ -54,6 +54,7 @@
 /*  This section Includes other configuration headers necessary to completely
     define this configuration.
 */
+#include "peripheral/mmu/plib_mmu.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -71,7 +72,7 @@ extern "C" {
 #define L1_ICACHE_IN_USE                               true
 #define L1_ICACHE_ENABLE()                             icache_Enable()
 #define L1_ICACHE_DISABLE()                            icache_Disable()
-#define L1_ICACHE_INVALIDATE_ALL()                     icache_InvalidateAll()
+#define L1_ICACHE_INVALIDATE_ALL()                     L1C_InvalidateICacheAll()
 
  
 #define L1_DCACHE_IN_USE                               true

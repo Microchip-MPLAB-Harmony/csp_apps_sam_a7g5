@@ -43,9 +43,11 @@ extern "C" {
 #define NO_INIT        __attribute__((section(".no_init")))
 #define SECTION(a)     __attribute__((__section__(a)))
 
-#define CACHE_LINE_SIZE    (32u)
+#define CACHE_LINE_SIZE    (64u)
 #define CACHE_ALIGN        __ALIGNED(CACHE_LINE_SIZE)
 
+#define CACHE_ALIGNED_SIZE_GET(size)     (size + ((size % CACHE_LINE_SIZE)? (CACHE_LINE_SIZE - (size % CACHE_LINE_SIZE)) : 0))
+	
 #ifndef FORMAT_ATTRIBUTE
    #define FORMAT_ATTRIBUTE(archetype, string_index, first_to_check)  __attribute__ ((format (archetype, string_index, first_to_check)))
 #endif
