@@ -76,11 +76,8 @@ void MMU_Initialize(void);
 void icache_InvalidateAll(void);
 void icache_Enable(void);
 void icache_Disable(void);
-/* Deprecated, Wont work with multilevel caches, Use CMSIS API instead */
 void dcache_InvalidateAll(void);
-/* Deprecated, Wont work with multilevel caches, Use CMSIS API instead */
 void dcache_CleanAll(void);
-/* Deprecated, Wont work with multilevel caches, Use CMSIS API instead */
 void dcache_CleanInvalidateAll(void);
 
 void dcache_InvalidateByAddr (uint32_t *addr, uint32_t size);
