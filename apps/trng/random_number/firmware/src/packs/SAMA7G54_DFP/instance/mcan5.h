@@ -1,5 +1,5 @@
-/**
- * \brief Instance header file for SAMA7G54
+/*
+ * Instance header file for SAMA7G54
  *
  * Copyright (c) 2021 Microchip Technology Inc. and its subsidiaries.
  *
@@ -20,13 +20,13 @@
  *
  */
 
-/* file generated from device description version 2021-05-08T21:15:36Z */
+/* file generated from device description version 2021-07-26T12:51:16Z */
 #ifndef _SAMA7G_MCAN5_INSTANCE_
 #define _SAMA7G_MCAN5_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for MCAN5 peripheral ========== */
-#define MCAN5_INSTANCE_ID_INT0                   _UL_(66)   /* Master CAN 5 */
+#define MCAN5_INSTANCE_ID                        _UL_(66)   /* Master CAN 5 */
 #define MCAN5_CLOCK_ID                           _UL_(66)   
 #define MCAN5_INSTANCE_ID_INT1                   _UL_(128)  /* MCAN5 interrupt1 */
 

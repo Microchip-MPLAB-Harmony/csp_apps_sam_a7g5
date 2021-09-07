@@ -55,7 +55,6 @@
 #include "peripheral/mmu/plib_mmu.h"
 #include "peripheral/matrix/plib_matrix.h"
 #include "peripheral/pio/plib_pio.h"
-#include "peripheral/generic_timer/plib_generic_timer.h"
 #include "peripheral/trng/plib_trng.h"
 #include "peripheral/flexcom/usart/plib_flexcom3_usart.h"
 
