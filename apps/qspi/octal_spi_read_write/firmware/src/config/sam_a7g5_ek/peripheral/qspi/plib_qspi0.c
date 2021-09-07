@@ -54,7 +54,7 @@ void QSPI0_Initialize(void)
 
     // Pad Calibration Configuration
     QSPI0_REGS->QSPI_PCALCFG = (QSPI0_REGS->QSPI_PCALCFG & ~QSPI_PCALCFG_CLKDIV_Msk) |
-                                                QSPI_PCALCFG_CLKDIV(7);
+                                                QSPI_PCALCFG_CLKDIV(7999999);
 
     /* DLL Range */
     QSPI0_REGS->QSPI_DLLCFG = QSPI_DLLCFG_RANGE_Msk;
@@ -224,6 +224,14 @@ bool QSPI0_CommandWrite( qspi_command_xfer_t *qspi_command_xfer, uint32_t addres
     mask |= QSPI_IFR_INSTEN_Msk;
     /* TFRTYP:0, SMRM:1, APBTFRTYP:0 */
     mask |= QSPI_IFR_SMRM(1);
+    if (qspi_command_xfer->ddr_en)
+    {
+        mask |= QSPI_IFR_DDREN_Msk;
+    }
+    if (qspi_command_xfer->ddr_cmd_en)
+    {
+        mask |= QSPI_IFR_DDRCMDEN_Msk;
+    }
     mask |= qspi_command_xfer->protocol_type;
 
     QSPI0_REGS->QSPI_IFR = mask;
@@ -271,6 +279,14 @@ bool QSPI0_RegisterRead( qspi_register_xfer_t *qspi_register_xfer, uint32_t *rx_
 
     /* TFRTYP:0, SMRM:0, APBTFRTYP:1 */
     mask |= QSPI_IFR_APBTFRTYP(1);
+    if (qspi_register_xfer->ddr_en)
+    {
+        mask |= QSPI_IFR_DDREN_Msk;
+    }
+    if (qspi_register_xfer->ddr_cmd_en)
+    {
+        mask |= QSPI_IFR_DDRCMDEN_Msk;
+    }
     mask |= qspi_register_xfer->protocol_type;
 
     QSPI0_REGS->QSPI_IFR = mask;
@@ -321,7 +337,14 @@ bool QSPI0_RegisterWrite( qspi_register_xfer_t *qspi_register_xfer, uint32_t *tx
     mask |= qspi_register_xfer->width;
 
     mask |= QSPI_IFR_INSTEN_Msk | QSPI_IFR_DATAEN_Msk;
-
+    if (qspi_register_xfer->ddr_en)
+    {
+        mask |= QSPI_IFR_DDREN_Msk;
+    }
+    if (qspi_register_xfer->ddr_cmd_en)
+    {
+        mask |= QSPI_IFR_DDRCMDEN_Msk;
+    }
     mask |= qspi_register_xfer->protocol_type;
 
     /* TFRTYP:0, SMRM:0, APBTFRTYP:0 */

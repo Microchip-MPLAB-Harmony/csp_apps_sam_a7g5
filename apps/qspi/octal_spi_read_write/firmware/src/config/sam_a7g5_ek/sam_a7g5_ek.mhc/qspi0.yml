@@ -35,5 +35,12 @@ children:
       children:
       - type: Dynamic
         attributes: {id: qspi0, value: 'true'}
+  - type: Integer
+    attributes: {id: QSPI_PCALCFG_CLKDIV}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: qspi0, value: '7999999'}
 - type: ElementPosition
   attributes: {x: '440', y: '20', id: qspi0}

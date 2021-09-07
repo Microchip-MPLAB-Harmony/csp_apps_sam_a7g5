@@ -255,7 +255,7 @@ uint32_t PIT64B0_TimerFrequencyGet(void);
 
 // *****************************************************************************
 /* Function:
-    void PIT64B0_DelayMs(uint32_t ms);
+    void PIT64B0_DelayMs(uint32_t delay_ms);
 
   Summary:
     Delays processing for x milliseconds.
@@ -265,15 +265,38 @@ uint32_t PIT64B0_TimerFrequencyGet(void);
     milliseconds has expired.  
 
   Precondition:
-    PIT64B0 is configured and enabled.  The PIT64B0 interrupt is also enabled.
+    PIT64B0 is configured and enabled.
 
   Parameters:
-    ms      - number of milliseconds to delay
+    delay_ms      - number of milliseconds to delay
   
   Returns:
     None.
 */
-void PIT64B0_DelayMs(uint32_t ms);
+void PIT64B0_DelayMs(uint32_t delay_us);
+
+// *****************************************************************************
+/* Function:
+    void PIT64B0_DelayUs(uint32_t delay_us);
+
+  Summary:
+    Delays processing for x microseconds.
+
+  Description:
+    Delays execution by using  the PIT64B0 timer to determine when given number of
+    microseconds has expired.  
+
+  Precondition:
+    PIT64B0 is configured and enabled.
+
+  Parameters:
+    delay_us      - number of microseconds to delay
+  
+  Returns:
+    None.
+*/
+void PIT64B0_DelayUs(uint32_t delay_us);
+
 
 // *****************************************************************************
 /* Function:
