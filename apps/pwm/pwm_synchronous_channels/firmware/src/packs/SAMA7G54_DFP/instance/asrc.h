@@ -1,5 +1,5 @@
-/**
- * \brief Instance header file for SAMA7G54
+/*
+ * Instance header file for SAMA7G54
  *
  * Copyright (c) 2021 Microchip Technology Inc. and its subsidiaries.
  *
@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2021-05-08T21:15:36Z */
+/* file generated from device description version 2021-07-26T12:51:16Z */
 #ifndef _SAMA7G_ASRC_INSTANCE_
 #define _SAMA7G_ASRC_INSTANCE_
 
