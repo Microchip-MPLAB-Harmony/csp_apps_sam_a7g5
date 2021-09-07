@@ -1,27 +1,27 @@
 files:
 - generatedChecksum: 70FE7C733642B55D5AC95E3A8BFCD930
-  logicalPath: config\sam_a7g5_ek
+  logicalPath: config/sam_a7g5_ek
   name: cstartup.S
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
   userChecksum: 70FE7C733642B55D5AC95E3A8BFCD930
 - generatedChecksum: A4A82BF95281026C9591A9D6C9BB0D35
-  logicalPath: config\sam_a7g5_ek
+  logicalPath: config/sam_a7g5_ek
   name: fault_handlers.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
   userChecksum: A4A82BF95281026C9591A9D6C9BB0D35
 - generatedChecksum: 1FE9231970281EDE79A20F7BB19ABCE7
-  logicalPath: config\sam_a7g5_ek
+  logicalPath: config/sam_a7g5_ek
   name: initialization.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
   userChecksum: 1FE9231970281EDE79A20F7BB19ABCE7
 - generatedChecksum: B96C9ABE4B17D3FA1F9F6D550C1FB230
-  logicalPath: config\sam_a7g5_ek
+  logicalPath: config/sam_a7g5_ek
   name: interrupts.c
   physicalPath: ''
   security: NON_SECURE
@@ -30,1258 +30,1258 @@ files:
 - generatedChecksum: null
   logicalPath: ''
   name: main.c
-  physicalPath: ..\..
+  physicalPath: ../..
   security: NON_SECURE
   type: SOURCE
   userChecksum: null
 - generatedChecksum: 17DBAB5453739BF2A92EBE3C5235BE2D
-  logicalPath: config\sam_a7g5_ek\peripheral\clk
+  logicalPath: config/sam_a7g5_ek/peripheral/clk
   name: plib_clk.c
-  physicalPath: peripheral\clk
+  physicalPath: peripheral/clk
   security: NON_SECURE
   type: SOURCE
   userChecksum: 17DBAB5453739BF2A92EBE3C5235BE2D
 - generatedChecksum: B566DF79ABA2D85DCC5FEFC5103C9E1E
-  logicalPath: config\sam_a7g5_ek\peripheral\dwdt
+  logicalPath: config/sam_a7g5_ek/peripheral/dwdt
   name: plib_dwdt.c
-  physicalPath: peripheral\dwdt
+  physicalPath: peripheral/dwdt
   security: NON_SECURE
   type: SOURCE
   userChecksum: B566DF79ABA2D85DCC5FEFC5103C9E1E
 - generatedChecksum: 0D0EDB0E33DBE408B7CC48E668968CF5
-  logicalPath: config\sam_a7g5_ek\peripheral\generic_timer
+  logicalPath: config/sam_a7g5_ek/peripheral/generic_timer
   name: plib_generic_timer.c
-  physicalPath: peripheral\generic_timer
+  physicalPath: peripheral/generic_timer
   security: NON_SECURE
   type: SOURCE
   userChecksum: 0D0EDB0E33DBE408B7CC48E668968CF5
-- generatedChecksum: 3774BE64D0DE1CE4151DE9142F6CE8C7
-  logicalPath: config\sam_a7g5_ek\peripheral\gic
+- generatedChecksum: BBFB639E460E2EDC05FE799690D3EB5E
+  logicalPath: config/sam_a7g5_ek/peripheral/gic
   name: plib_gic.c
-  physicalPath: peripheral\gic
+  physicalPath: peripheral/gic
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 3774BE64D0DE1CE4151DE9142F6CE8C7
+  userChecksum: BBFB639E460E2EDC05FE799690D3EB5E
 - generatedChecksum: 6982F42602FEAD7E154F55EAC758BD86
-  logicalPath: config\sam_a7g5_ek\peripheral\matrix
+  logicalPath: config/sam_a7g5_ek/peripheral/matrix
   name: plib_matrix.c
-  physicalPath: peripheral\matrix
+  physicalPath: peripheral/matrix
   security: NON_SECURE
   type: SOURCE
   userChecksum: 6982F42602FEAD7E154F55EAC758BD86
 - generatedChecksum: 17CA8B8EE607F477426E2F74DC38D777
-  logicalPath: config\sam_a7g5_ek\peripheral\mmu
+  logicalPath: config/sam_a7g5_ek/peripheral/mmu
   name: plib_mmu.c
-  physicalPath: peripheral\mmu
+  physicalPath: peripheral/mmu
   security: NON_SECURE
   type: SOURCE
   userChecksum: 17CA8B8EE607F477426E2F74DC38D777
-- generatedChecksum: F92579A161DD0BFD32706FCC047DB8ED
-  logicalPath: config\sam_a7g5_ek\peripheral\pio
+- generatedChecksum: 23598C1C99F1B2DAF85A4FC103ECEE71
+  logicalPath: config/sam_a7g5_ek/peripheral/pio
   name: plib_pio.c
-  physicalPath: peripheral\pio
+  physicalPath: peripheral/pio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: F92579A161DD0BFD32706FCC047DB8ED
+  userChecksum: 23598C1C99F1B2DAF85A4FC103ECEE71
 - generatedChecksum: C67BD377A0A51B18C430236891AC9E78
-  logicalPath: config\sam_a7g5_ek\peripheral\rtc
+  logicalPath: config/sam_a7g5_ek/peripheral/rtc
   name: plib_rtc.c
-  physicalPath: peripheral\rtc
+  physicalPath: peripheral/rtc
   security: NON_SECURE
   type: SOURCE
   userChecksum: C67BD377A0A51B18C430236891AC9E78
 - generatedChecksum: CA6F79C05D5D90205DB5DD33C441AEBA
-  logicalPath: config\sam_a7g5_ek\peripheral\shdwc
+  logicalPath: config/sam_a7g5_ek/peripheral/shdwc
   name: plib_shdwc.c
-  physicalPath: peripheral\shdwc
+  physicalPath: peripheral/shdwc
   security: NON_SECURE
   type: SOURCE
   userChecksum: CA6F79C05D5D90205DB5DD33C441AEBA
 - generatedChecksum: 7806B30ECAE0D18D08CD583D8775530D
-  logicalPath: config\sam_a7g5_ek\stdio
+  logicalPath: config/sam_a7g5_ek/stdio
   name: xc32_monitor.c
   physicalPath: stdio
   security: NON_SECURE
   type: SOURCE
   userChecksum: 7806B30ECAE0D18D08CD583D8775530D
-- generatedChecksum: 9EBC61EF067F29BAF54A5ABF7AB7B2F6
-  logicalPath: packs\SAMA7G54_DFP\component
+- generatedChecksum: C157C52E4281546144C8D5076DD3BB2D
+  logicalPath: packs/SAMA7G54_DFP/component
   name: acc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 9EBC61EF067F29BAF54A5ABF7AB7B2F6
-- generatedChecksum: 338FB46BEB3B8CB0E129CD233411BBD4
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: C157C52E4281546144C8D5076DD3BB2D
+- generatedChecksum: F1FACDE74890518475D5FE27ADB25A46
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: acc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 338FB46BEB3B8CB0E129CD233411BBD4
-- generatedChecksum: 16B5C4D44348B2598883C83EE7029449
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: F1FACDE74890518475D5FE27ADB25A46
+- generatedChecksum: A9207C09F42A727C6E82DDC5E2FDA90D
+  logicalPath: packs/SAMA7G54_DFP/component
   name: adc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 16B5C4D44348B2598883C83EE7029449
-- generatedChecksum: 284FF6FD7FB54ECA61E3149C9777D227
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: A9207C09F42A727C6E82DDC5E2FDA90D
+- generatedChecksum: B13418A36BDCEE1B6C24AE56F83D2907
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: adc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 284FF6FD7FB54ECA61E3149C9777D227
-- generatedChecksum: D74078B2E5DEE8DECB91DAAC196A508A
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: B13418A36BDCEE1B6C24AE56F83D2907
+- generatedChecksum: ED29341892493D068E2B55CD92EA6B39
+  logicalPath: packs/SAMA7G54_DFP/component
   name: aes.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: D74078B2E5DEE8DECB91DAAC196A508A
-- generatedChecksum: 88BFD8FEC4EE6BD2508491C6D80A57CF
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: ED29341892493D068E2B55CD92EA6B39
+- generatedChecksum: 4942BE3BEB04CF2A6004B7B77F8D7D54
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: aes.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 88BFD8FEC4EE6BD2508491C6D80A57CF
-- generatedChecksum: 10BB5AF9A41D70F9210DCC25FDC08D62
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 4942BE3BEB04CF2A6004B7B77F8D7D54
+- generatedChecksum: 946EDD924933EFEE9D14D209F0084A17
+  logicalPath: packs/SAMA7G54_DFP/component
   name: asrc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 10BB5AF9A41D70F9210DCC25FDC08D62
-- generatedChecksum: 196C333E6501CE41FD5B36F99A977D39
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 946EDD924933EFEE9D14D209F0084A17
+- generatedChecksum: 9C5EAA24DF695FC3B4A166C48DFB7D6C
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: asrc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 196C333E6501CE41FD5B36F99A977D39
-- generatedChecksum: B6FE6B8679528123D781CEB6CFEC0950
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 9C5EAA24DF695FC3B4A166C48DFB7D6C
+- generatedChecksum: 1627DD1B7259F09727F1044B9E869A63
+  logicalPath: packs/SAMA7G54_DFP/component
   name: bsc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: B6FE6B8679528123D781CEB6CFEC0950
-- generatedChecksum: 839E554CCB56CB15DF1A6E832A3168A9
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 1627DD1B7259F09727F1044B9E869A63
+- generatedChecksum: 7E07D9BAD371325F003DD1FB0C66316D
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: bsc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 839E554CCB56CB15DF1A6E832A3168A9
-- generatedChecksum: 3B09AC3432B8333BECA82F577C13DAF2
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 7E07D9BAD371325F003DD1FB0C66316D
+- generatedChecksum: 06F916A3A7C75F2D9B56BAF24955C978
+  logicalPath: packs/SAMA7G54_DFP/component
   name: chipid.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 3B09AC3432B8333BECA82F577C13DAF2
-- generatedChecksum: 7B75DB87EB48C4624358661C56A05DB8
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 06F916A3A7C75F2D9B56BAF24955C978
+- generatedChecksum: EE5317C04423B8129FC0DA8CCA673F17
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: chipid.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 7B75DB87EB48C4624358661C56A05DB8
+  userChecksum: EE5317C04423B8129FC0DA8CCA673F17
 - generatedChecksum: 0A03866A98E64A8AF74F5786C64C529F
-  logicalPath: packs\CMSIS\CMSIS\Core_A\Include
+  logicalPath: packs/CMSIS/CMSIS/Core_A/Include
   name: cmsis_compiler.h
-  physicalPath: ..\..\packs\CMSIS\CMSIS\Core_A\Include
+  physicalPath: ../../packs/CMSIS/CMSIS/Core_A/Include
   security: NON_SECURE
   type: HEADER
   userChecksum: 0A03866A98E64A8AF74F5786C64C529F
 - generatedChecksum: 0A327C3031D097409B602CA5B79B1358
-  logicalPath: packs\CMSIS\CMSIS\Core_A\Include
+  logicalPath: packs/CMSIS/CMSIS/Core_A/Include
   name: cmsis_cp15.h
-  physicalPath: ..\..\packs\CMSIS\CMSIS\Core_A\Include
+  physicalPath: ../../packs/CMSIS/CMSIS/Core_A/Include
   security: NON_SECURE
   type: HEADER
   userChecksum: 0A327C3031D097409B602CA5B79B1358
 - generatedChecksum: 96A771F9A23DE1A5AA42C60A5A51ED52
-  logicalPath: packs\CMSIS\CMSIS\Core_A\Include
+  logicalPath: packs/CMSIS/CMSIS/Core_A/Include
   name: cmsis_gcc.h
-  physicalPath: ..\..\packs\CMSIS\CMSIS\Core_A\Include
+  physicalPath: ../../packs/CMSIS/CMSIS/Core_A/Include
   security: NON_SECURE
   type: HEADER
   userChecksum: 96A771F9A23DE1A5AA42C60A5A51ED52
 - generatedChecksum: ACE577277E146F49B92285A8CD8E2D1D
-  logicalPath: packs\CMSIS\CMSIS\Core_A\Include
+  logicalPath: packs/CMSIS/CMSIS/Core_A/Include
   name: cmsis_iccarm.h
-  physicalPath: ..\..\packs\CMSIS\CMSIS\Core_A\Include
+  physicalPath: ../../packs/CMSIS/CMSIS/Core_A/Include
   security: NON_SECURE
   type: HEADER
   userChecksum: ACE577277E146F49B92285A8CD8E2D1D
 - generatedChecksum: 32D6F5036C919DE32EFC951936B81657
-  logicalPath: packs\CMSIS\CMSIS\Core_A\Include
+  logicalPath: packs/CMSIS/CMSIS/Core_A/Include
   name: core_ca.h
-  physicalPath: ..\..\packs\CMSIS\CMSIS\Core_A\Include
+  physicalPath: ../../packs/CMSIS/CMSIS/Core_A/Include
   security: NON_SECURE
   type: HEADER
   userChecksum: 32D6F5036C919DE32EFC951936B81657
-- generatedChecksum: B8FABCD15E3DEF85C852CE6357ABF959
-  logicalPath: packs\SAMA7G54_DFP\component
+- generatedChecksum: 5F21F7C80CF438DD90EF7AB8B6425AD6
+  logicalPath: packs/SAMA7G54_DFP/component
   name: cpkcc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: B8FABCD15E3DEF85C852CE6357ABF959
-- generatedChecksum: FC8EE5E24C0E6CC1740CF13E7BFB885E
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 5F21F7C80CF438DD90EF7AB8B6425AD6
+- generatedChecksum: CE35EF10141AD3D767CF9FE9720F8A87
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: cpkcc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: FC8EE5E24C0E6CC1740CF13E7BFB885E
-- generatedChecksum: 1F8945A599205FB29F5F425B93358AD3
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: CE35EF10141AD3D767CF9FE9720F8A87
+- generatedChecksum: 6F2552DBC9C20C7392F87334F6F3AED1
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: csi.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 1F8945A599205FB29F5F425B93358AD3
-- generatedChecksum: DB677722E145068095F00686140AA08C
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 6F2552DBC9C20C7392F87334F6F3AED1
+- generatedChecksum: 16AC80A3831310BD773A753A4713D976
+  logicalPath: packs/SAMA7G54_DFP/component
   name: csi2dc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: DB677722E145068095F00686140AA08C
-- generatedChecksum: 7BA6EFC2EF0B99A8732A3AA1D071D605
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 16AC80A3831310BD773A753A4713D976
+- generatedChecksum: 20C61D93B710EBAD8383B84AA38DA09C
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: csi2dc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 7BA6EFC2EF0B99A8732A3AA1D071D605
-- generatedChecksum: A4EFE0353C48C5A137489F768EB42AAE
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 20C61D93B710EBAD8383B84AA38DA09C
+- generatedChecksum: A29A36C91B7528A97D48EA3FC2EF6825
+  logicalPath: packs/SAMA7G54_DFP/component
   name: ddr3phy.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: A4EFE0353C48C5A137489F768EB42AAE
-- generatedChecksum: DB5969296FA46AF96A3FFA590F4E83D0
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: A29A36C91B7528A97D48EA3FC2EF6825
+- generatedChecksum: 67EFB83B69426C626E99627F156A20B1
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: ddrpubl.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: DB5969296FA46AF96A3FFA590F4E83D0
-- generatedChecksum: 3AC211378E9B0F7C7AC7E1E4A0666F34
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 67EFB83B69426C626E99627F156A20B1
+- generatedChecksum: D8F1E3326ADC78732F8267E015053776
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: ddrumctl.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 3AC211378E9B0F7C7AC7E1E4A0666F34
+  userChecksum: D8F1E3326ADC78732F8267E015053776
 - generatedChecksum: BB330CBEEAAB01809BFBB32D14E51764
-  logicalPath: config\sam_a7g5_ek
+  logicalPath: config/sam_a7g5_ek
   name: definitions.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
   userChecksum: BB330CBEEAAB01809BFBB32D14E51764
 - generatedChecksum: 7FE6CCE96CAA1EA1DE7F1CACBF262531
-  logicalPath: config\sam_a7g5_ek
+  logicalPath: config/sam_a7g5_ek
   name: device.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
   userChecksum: 7FE6CCE96CAA1EA1DE7F1CACBF262531
 - generatedChecksum: EB7983D4ADF0D960619025E5AC2D244A
-  logicalPath: config\sam_a7g5_ek
+  logicalPath: config/sam_a7g5_ek
   name: device_cache.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
   userChecksum: EB7983D4ADF0D960619025E5AC2D244A
-- generatedChecksum: 22809D951CC03F739C402E6124686265
-  logicalPath: packs\SAMA7G54_DFP\component
+- generatedChecksum: 24BA6CBAB0BB37C1573FE75FA99AB56C
+  logicalPath: packs/SAMA7G54_DFP/component
   name: dwdt.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 22809D951CC03F739C402E6124686265
-- generatedChecksum: 173306A31DF4ED4AF047D67FF012F35B
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 24BA6CBAB0BB37C1573FE75FA99AB56C
+- generatedChecksum: EEFBCA0CF919E9EB01147B7844B3C3DE
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: dwdt.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 173306A31DF4ED4AF047D67FF012F35B
-- generatedChecksum: 2F277C53748AC31537DA64ED273E2887
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: EEFBCA0CF919E9EB01147B7844B3C3DE
+- generatedChecksum: 86C0C5F58C67266936E02EE0B2F13606
+  logicalPath: packs/SAMA7G54_DFP/component
   name: eic.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 2F277C53748AC31537DA64ED273E2887
-- generatedChecksum: 279DD993F7BE9CF1C584A2D6633EA7BC
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 86C0C5F58C67266936E02EE0B2F13606
+- generatedChecksum: 4C25FE410BA917237B117210724536E3
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: eic.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 279DD993F7BE9CF1C584A2D6633EA7BC
-- generatedChecksum: E67692716AB86739A8CF98099549AC88
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 4C25FE410BA917237B117210724536E3
+- generatedChecksum: 84508076DB92515150E5EB44F6576232
+  logicalPath: packs/SAMA7G54_DFP/component
   name: flexcom.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: E67692716AB86739A8CF98099549AC88
-- generatedChecksum: 3E5B545AB2D7CD272B7C2F67874D496E
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 84508076DB92515150E5EB44F6576232
+- generatedChecksum: BA0913FDD06E6007E88537EB0C7EADD5
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: flexcom0.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 3E5B545AB2D7CD272B7C2F67874D496E
-- generatedChecksum: F8D1C9E2EB4EB090863AFE94220CB74A
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: BA0913FDD06E6007E88537EB0C7EADD5
+- generatedChecksum: 61BE4D5EDF5A46BA0C2298949B62EDED
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: flexcom1.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: F8D1C9E2EB4EB090863AFE94220CB74A
-- generatedChecksum: 2943CF6C62A9028D6F6B004A99C789F9
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 61BE4D5EDF5A46BA0C2298949B62EDED
+- generatedChecksum: 76B6CE46B4C033C56D7BD01F49C621B9
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: flexcom10.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 2943CF6C62A9028D6F6B004A99C789F9
-- generatedChecksum: FA001499926055D6E92184194DEFD548
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 76B6CE46B4C033C56D7BD01F49C621B9
+- generatedChecksum: 08E942D0EF784DE17223BC9497D7C996
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: flexcom11.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: FA001499926055D6E92184194DEFD548
-- generatedChecksum: CF6FBF353D323256C03D5F635EB1242B
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 08E942D0EF784DE17223BC9497D7C996
+- generatedChecksum: 32B3918375EFD5DFE9391A11624A85C4
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: flexcom2.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: CF6FBF353D323256C03D5F635EB1242B
-- generatedChecksum: 2A50D2FB22C01CB07B8E29DABE96F1AA
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 32B3918375EFD5DFE9391A11624A85C4
+- generatedChecksum: BD2E95F231EA62376EC555BA42B0425C
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: flexcom3.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 2A50D2FB22C01CB07B8E29DABE96F1AA
-- generatedChecksum: D27D1585ACB21362CB14CC35DA04FE3B
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: BD2E95F231EA62376EC555BA42B0425C
+- generatedChecksum: AAC8C70538BA78FACAC7D4A402A9491C
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: flexcom4.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: D27D1585ACB21362CB14CC35DA04FE3B
-- generatedChecksum: FDC8251BBF9BDE4365857C986ADF497C
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: AAC8C70538BA78FACAC7D4A402A9491C
+- generatedChecksum: 09929F9CAC98E2BB1B5B8CD879EAC447
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: flexcom5.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: FDC8251BBF9BDE4365857C986ADF497C
-- generatedChecksum: 68FCE58A70F3A0D139EEFAC6D4590F99
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 09929F9CAC98E2BB1B5B8CD879EAC447
+- generatedChecksum: 0E92179B51ADF676C9960C45A201B6B2
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: flexcom6.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 68FCE58A70F3A0D139EEFAC6D4590F99
-- generatedChecksum: 510549226E07E0339ADDE5DB232DFB65
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 0E92179B51ADF676C9960C45A201B6B2
+- generatedChecksum: A04ED8C0FC4F89532EC9AC1CB2D355E0
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: flexcom7.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 510549226E07E0339ADDE5DB232DFB65
-- generatedChecksum: EA97A64ABA8733420A03ADEA74992006
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: A04ED8C0FC4F89532EC9AC1CB2D355E0
+- generatedChecksum: 6B153F00A2D92F1D1EB89B0B8993D9E2
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: flexcom8.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: EA97A64ABA8733420A03ADEA74992006
-- generatedChecksum: BB89EFCC6434D49C27FF96D08C7D61AB
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 6B153F00A2D92F1D1EB89B0B8993D9E2
+- generatedChecksum: 96A06F46438D3338EAEC05A600B8F2FC
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: flexcom9.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: BB89EFCC6434D49C27FF96D08C7D61AB
-- generatedChecksum: 4906BD1D6E4BA8AA9E88EF8459B87D8E
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 96A06F46438D3338EAEC05A600B8F2FC
+- generatedChecksum: C329F132C6CB99B8BDCD57C860C46B4B
+  logicalPath: packs/SAMA7G54_DFP/component
   name: gmac.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 4906BD1D6E4BA8AA9E88EF8459B87D8E
-- generatedChecksum: 2F15C2C4E86A561375B73BE9C07239E3
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: C329F132C6CB99B8BDCD57C860C46B4B
+- generatedChecksum: 3A33B2B276A6498700416082F97980A2
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: gmac0.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 2F15C2C4E86A561375B73BE9C07239E3
-- generatedChecksum: FBCD5CEF3C05F0592F624953CE644D35
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 3A33B2B276A6498700416082F97980A2
+- generatedChecksum: 237B1D706EF24ACAFD5266C21BB1F61D
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: gmac1.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: FBCD5CEF3C05F0592F624953CE644D35
-- generatedChecksum: D40C8CB68A473E145FD05750B9846A9B
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 237B1D706EF24ACAFD5266C21BB1F61D
+- generatedChecksum: 40BA72F22EA5141771107C3954672128
+  logicalPath: packs/SAMA7G54_DFP/component
   name: gpbr.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: D40C8CB68A473E145FD05750B9846A9B
-- generatedChecksum: 746B05950A9B83D7D5AB100FC8DD5781
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 40BA72F22EA5141771107C3954672128
+- generatedChecksum: 5C9E2FFEEEF34BBF43FB6A2CF91FE2CF
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: gpbr.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 746B05950A9B83D7D5AB100FC8DD5781
-- generatedChecksum: C0CE654BA95850000575E8D2E33CC342
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 5C9E2FFEEEF34BBF43FB6A2CF91FE2CF
+- generatedChecksum: 960854A1D83447DC8A61B8BC63B930B0
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: hsmc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: C0CE654BA95850000575E8D2E33CC342
-- generatedChecksum: E88C7965C643838D998055D14A447CAE
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 960854A1D83447DC8A61B8BC63B930B0
+- generatedChecksum: A6C2D8FDBEB3BAED32460FB44F44F28D
+  logicalPath: packs/SAMA7G54_DFP/component
   name: i2smcc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: E88C7965C643838D998055D14A447CAE
-- generatedChecksum: 25587202E3D14D6E9C33EDD185BF30C3
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: A6C2D8FDBEB3BAED32460FB44F44F28D
+- generatedChecksum: A339AE16F98C30524DF0F735BBAFB68C
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: i2smcc0.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 25587202E3D14D6E9C33EDD185BF30C3
-- generatedChecksum: 3CFA70907E2DCF8440E20AEB9E7E6CFC
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: A339AE16F98C30524DF0F735BBAFB68C
+- generatedChecksum: 04AE527DFF7A5D4265F6AADBACADA679
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: i2smcc1.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 3CFA70907E2DCF8440E20AEB9E7E6CFC
-- generatedChecksum: B93256351D9AF0CA497DDD2846F22F16
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 04AE527DFF7A5D4265F6AADBACADA679
+- generatedChecksum: E6E5EC065448D4655295B3674C383301
+  logicalPath: packs/SAMA7G54_DFP/component
   name: icm.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: B93256351D9AF0CA497DDD2846F22F16
-- generatedChecksum: 73ED543D191C504FEFC43A4E324C86C9
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: E6E5EC065448D4655295B3674C383301
+- generatedChecksum: A8145CEBDB9F0FC1170D8BAA074BC26D
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: icm.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 73ED543D191C504FEFC43A4E324C86C9
+  userChecksum: A8145CEBDB9F0FC1170D8BAA074BC26D
 - generatedChecksum: 0BE073F266AEAF3F5E2589C822C413F7
-  logicalPath: config\sam_a7g5_ek
+  logicalPath: config/sam_a7g5_ek
   name: interrupts.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
   userChecksum: 0BE073F266AEAF3F5E2589C822C413F7
-- generatedChecksum: 8BD7929EF7C9F33AB98F120441AB0811
-  logicalPath: packs\SAMA7G54_DFP\component
+- generatedChecksum: 56E29C6480B1B665CAF3E88CA1B835B0
+  logicalPath: packs/SAMA7G54_DFP/component
   name: isc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 8BD7929EF7C9F33AB98F120441AB0811
-- generatedChecksum: A36507B9A767205B0E335F149B92BDAE
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 56E29C6480B1B665CAF3E88CA1B835B0
+- generatedChecksum: 173391292ED0E047B8B8FEAB281CBD6D
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: isc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: A36507B9A767205B0E335F149B92BDAE
-- generatedChecksum: D35EBBFD1A2FE81D48F66BEA9FF04053
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 173391292ED0E047B8B8FEAB281CBD6D
+- generatedChecksum: 62BDF21B9A8F87ADC1F5371DED532623
+  logicalPath: packs/SAMA7G54_DFP/component
   name: matrix.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: D35EBBFD1A2FE81D48F66BEA9FF04053
-- generatedChecksum: 624A2E0215D831ED398EBC47341C3C58
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 62BDF21B9A8F87ADC1F5371DED532623
+- generatedChecksum: CC5F3B109BBD50875A3763CCB462F35F
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: matrix.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 624A2E0215D831ED398EBC47341C3C58
-- generatedChecksum: A4872BB63C545A95094B017732C8D91B
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: CC5F3B109BBD50875A3763CCB462F35F
+- generatedChecksum: 348834C57A7E7644DD75166C934FE47E
+  logicalPath: packs/SAMA7G54_DFP/component
   name: mcan.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: A4872BB63C545A95094B017732C8D91B
-- generatedChecksum: 88265C3CE446C78B46DAF367C010C1FA
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 348834C57A7E7644DD75166C934FE47E
+- generatedChecksum: 892CCDFC7773DCE0602EC696FD2D7A71
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: mcan0.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 88265C3CE446C78B46DAF367C010C1FA
-- generatedChecksum: FDE35416DB991AFDBB941B68A248840B
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 892CCDFC7773DCE0602EC696FD2D7A71
+- generatedChecksum: AC8B42F988F7DD881C12ACC69B43E4B2
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: mcan1.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: FDE35416DB991AFDBB941B68A248840B
-- generatedChecksum: EB01BA3F68E66F2E7FC31AE3CD13A46C
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: AC8B42F988F7DD881C12ACC69B43E4B2
+- generatedChecksum: 23EAC43A56D37F48DA8F270E3046127B
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: mcan2.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: EB01BA3F68E66F2E7FC31AE3CD13A46C
-- generatedChecksum: 34B3B855DC98F76F9E43FFE482FF5B27
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 23EAC43A56D37F48DA8F270E3046127B
+- generatedChecksum: C5941A2E792600EB9EAFB5A96752B79E
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: mcan3.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 34B3B855DC98F76F9E43FFE482FF5B27
-- generatedChecksum: 4386A3C8C9C1E2A5AC5977F5F7F8C7F3
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: C5941A2E792600EB9EAFB5A96752B79E
+- generatedChecksum: A464FB042F376F0B19D9A0B5FB62D642
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: mcan4.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 4386A3C8C9C1E2A5AC5977F5F7F8C7F3
-- generatedChecksum: AB584AA2F0ED4CE6ABAC068C47FDAAAA
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: A464FB042F376F0B19D9A0B5FB62D642
+- generatedChecksum: 22DEAC5B06B935885C1B6ACC541AD674
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: mcan5.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: AB584AA2F0ED4CE6ABAC068C47FDAAAA
-- generatedChecksum: C3D13F65AE974FAEA362F3A509AB955B
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 22DEAC5B06B935885C1B6ACC541AD674
+- generatedChecksum: B551D73212F4C294CD46B18C7CCD264D
+  logicalPath: packs/SAMA7G54_DFP/component
   name: mipicsi2phy.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: C3D13F65AE974FAEA362F3A509AB955B
-- generatedChecksum: 7AF1F64DB87BD26B55487DEABFFAF629
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: B551D73212F4C294CD46B18C7CCD264D
+- generatedChecksum: BC73F0448E17458D70A70DEC30D8FCFD
+  logicalPath: packs/SAMA7G54_DFP/component
   name: nicgpv.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 7AF1F64DB87BD26B55487DEABFFAF629
-- generatedChecksum: 698E69F3EB9ED3E169298EC8BECAB8F7
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: BC73F0448E17458D70A70DEC30D8FCFD
+- generatedChecksum: 5D8B4EF3B9348132C1FA030B035274A0
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: nicgpv.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 698E69F3EB9ED3E169298EC8BECAB8F7
-- generatedChecksum: 4BBCC79CE99B1D340B03D7BF67297364
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 5D8B4EF3B9348132C1FA030B035274A0
+- generatedChecksum: FE9AC4A4676EFEA8925FA7DF15ABA8EF
+  logicalPath: packs/SAMA7G54_DFP/component
   name: otpc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 4BBCC79CE99B1D340B03D7BF67297364
-- generatedChecksum: E862928A3EB53E25309E59F27600A8FA
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: FE9AC4A4676EFEA8925FA7DF15ABA8EF
+- generatedChecksum: 52340C807E3842FFAB5A1C0B41A7BAD7
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: otpc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: E862928A3EB53E25309E59F27600A8FA
-- generatedChecksum: FCB4C4C8EB31C87FD44DD1AF6A342975
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 52340C807E3842FFAB5A1C0B41A7BAD7
+- generatedChecksum: 52C19394127235D91ABD815B604D2A70
+  logicalPath: packs/SAMA7G54_DFP/component
   name: pdmc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: FCB4C4C8EB31C87FD44DD1AF6A342975
-- generatedChecksum: A7EC39EF32A2402708F43440ED2025D0
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 52C19394127235D91ABD815B604D2A70
+- generatedChecksum: 83B0F40809EEAED4901309C0534916A3
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: pdmc0.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: A7EC39EF32A2402708F43440ED2025D0
-- generatedChecksum: 5A423AAB5A24D5785CE8BC6C3A9F05E0
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 83B0F40809EEAED4901309C0534916A3
+- generatedChecksum: FDAC1A6F0E2148B89DE64768EB806182
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: pdmc1.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 5A423AAB5A24D5785CE8BC6C3A9F05E0
-- generatedChecksum: 9FCA94B9EB33E213E340165F56EAA239
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: FDAC1A6F0E2148B89DE64768EB806182
+- generatedChecksum: EB6B9837F0EB33D73DE2FFF7196D8323
+  logicalPath: packs/SAMA7G54_DFP/component
   name: pio.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 9FCA94B9EB33E213E340165F56EAA239
-- generatedChecksum: D496DA0A2D93F68A0C54DFBB7042AB10
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: EB6B9837F0EB33D73DE2FFF7196D8323
+- generatedChecksum: DC3BC70C7391E45037C70AEB41AF5302
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: pio.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: D496DA0A2D93F68A0C54DFBB7042AB10
-- generatedChecksum: 0F8903E2FE132BD42F3B287BEE601086
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: DC3BC70C7391E45037C70AEB41AF5302
+- generatedChecksum: EEDADDCAE3A951B1B83628763B19562A
+  logicalPath: packs/SAMA7G54_DFP/component
   name: pit64b.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 0F8903E2FE132BD42F3B287BEE601086
-- generatedChecksum: 71B065D74EAFFAAF82F3B0586635026C
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: EEDADDCAE3A951B1B83628763B19562A
+- generatedChecksum: A5957FC45F916CD3D873513191B5028C
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: pit64b0.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 71B065D74EAFFAAF82F3B0586635026C
-- generatedChecksum: 25694941C6371371270A2851012FEBF5
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: A5957FC45F916CD3D873513191B5028C
+- generatedChecksum: 535FFE4DACC21E3D71FEA5E8439F3241
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: pit64b1.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 25694941C6371371270A2851012FEBF5
-- generatedChecksum: E1BBF10C7820119EE4C68F4AC2AAA3B2
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 535FFE4DACC21E3D71FEA5E8439F3241
+- generatedChecksum: 0B0EF1AB31F42ABF7B16500C24D6FAFD
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: pit64b2.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: E1BBF10C7820119EE4C68F4AC2AAA3B2
-- generatedChecksum: 43593483B4A86CE77680D4C00F7E4DBD
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 0B0EF1AB31F42ABF7B16500C24D6FAFD
+- generatedChecksum: AB9E583FB4D23A33464A431C9BA7D685
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: pit64b3.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 43593483B4A86CE77680D4C00F7E4DBD
-- generatedChecksum: E6934A46D6C1DCFBA722B8290B36CCE4
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: AB9E583FB4D23A33464A431C9BA7D685
+- generatedChecksum: 651CC80148C8AD081FD85C29C841D579
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: pit64b4.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: E6934A46D6C1DCFBA722B8290B36CCE4
-- generatedChecksum: DF59C90986ED1B4A54A62BE25C49F8D8
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 651CC80148C8AD081FD85C29C841D579
+- generatedChecksum: FEFAF0E187FDEAC563E0487DE8024CCE
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: pit64b5.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: DF59C90986ED1B4A54A62BE25C49F8D8
+  userChecksum: FEFAF0E187FDEAC563E0487DE8024CCE
 - generatedChecksum: 1594CA4BD5EC509AE3EBACB04E1F644B
-  logicalPath: config\sam_a7g5_ek\peripheral\clk
+  logicalPath: config/sam_a7g5_ek/peripheral/clk
   name: plib_clk.h
-  physicalPath: peripheral\clk
+  physicalPath: peripheral/clk
   security: NON_SECURE
   type: HEADER
   userChecksum: 1594CA4BD5EC509AE3EBACB04E1F644B
 - generatedChecksum: 7820F58B6A93538A790FA46ACE1D6470
-  logicalPath: config\sam_a7g5_ek\peripheral\dwdt
+  logicalPath: config/sam_a7g5_ek/peripheral/dwdt
   name: plib_dwdt.h
-  physicalPath: peripheral\dwdt
+  physicalPath: peripheral/dwdt
   security: NON_SECURE
   type: HEADER
   userChecksum: 7820F58B6A93538A790FA46ACE1D6470
 - generatedChecksum: 6340835C380EDE410C6A07F407FDE897
-  logicalPath: config\sam_a7g5_ek\peripheral\generic_timer
+  logicalPath: config/sam_a7g5_ek/peripheral/generic_timer
   name: plib_generic_timer.h
-  physicalPath: peripheral\generic_timer
+  physicalPath: peripheral/generic_timer
   security: NON_SECURE
   type: HEADER
   userChecksum: 6340835C380EDE410C6A07F407FDE897
 - generatedChecksum: B71668C25421FA88998A72CA3975FA83
-  logicalPath: config\sam_a7g5_ek\peripheral\gic
+  logicalPath: config/sam_a7g5_ek/peripheral/gic
   name: plib_gic.h
-  physicalPath: peripheral\gic
+  physicalPath: peripheral/gic
   security: NON_SECURE
   type: HEADER
   userChecksum: B71668C25421FA88998A72CA3975FA83
 - generatedChecksum: E8167D30D019275C8F2EEA14CD0EBC42
-  logicalPath: config\sam_a7g5_ek\peripheral\matrix
+  logicalPath: config/sam_a7g5_ek/peripheral/matrix
   name: plib_matrix.h
-  physicalPath: peripheral\matrix
+  physicalPath: peripheral/matrix
   security: NON_SECURE
   type: HEADER
   userChecksum: E8167D30D019275C8F2EEA14CD0EBC42
 - generatedChecksum: 8187CF043E15265A5292B4AB63AB26CA
-  logicalPath: config\sam_a7g5_ek\peripheral\mmu
+  logicalPath: config/sam_a7g5_ek/peripheral/mmu
   name: plib_mmu.h
-  physicalPath: peripheral\mmu
+  physicalPath: peripheral/mmu
   security: NON_SECURE
   type: HEADER
   userChecksum: 8187CF043E15265A5292B4AB63AB26CA
 - generatedChecksum: 1F7088A2B90E0E6ACF19AB68E7EAF548
-  logicalPath: config\sam_a7g5_ek\peripheral\pio
+  logicalPath: config/sam_a7g5_ek/peripheral/pio
   name: plib_pio.h
-  physicalPath: peripheral\pio
+  physicalPath: peripheral/pio
   security: NON_SECURE
   type: HEADER
   userChecksum: 1F7088A2B90E0E6ACF19AB68E7EAF548
 - generatedChecksum: 621AE9009C9F785D735088FDD9252CDF
-  logicalPath: config\sam_a7g5_ek\peripheral\rtc
+  logicalPath: config/sam_a7g5_ek/peripheral/rtc
   name: plib_rtc.h
-  physicalPath: peripheral\rtc
+  physicalPath: peripheral/rtc
   security: NON_SECURE
   type: HEADER
   userChecksum: 621AE9009C9F785D735088FDD9252CDF
 - generatedChecksum: 23DD6551AAD0E0BE65CAE99ECB44BD61
-  logicalPath: config\sam_a7g5_ek\peripheral\rtc
+  logicalPath: config/sam_a7g5_ek/peripheral/rtc
   name: plib_rtc_common.h
-  physicalPath: peripheral\rtc
+  physicalPath: peripheral/rtc
   security: NON_SECURE
   type: HEADER
   userChecksum: 23DD6551AAD0E0BE65CAE99ECB44BD61
 - generatedChecksum: 15EED8E0D4422D064DD2A17359792859
-  logicalPath: config\sam_a7g5_ek\peripheral\shdwc
+  logicalPath: config/sam_a7g5_ek/peripheral/shdwc
   name: plib_shdwc.h
-  physicalPath: peripheral\shdwc
+  physicalPath: peripheral/shdwc
   security: NON_SECURE
   type: HEADER
   userChecksum: 15EED8E0D4422D064DD2A17359792859
-- generatedChecksum: BC3A359CBBFB4EFC884B9E9D24E0E15D
-  logicalPath: packs\SAMA7G54_DFP\component
+- generatedChecksum: F18D26EED241BD780C0630ACE123E000
+  logicalPath: packs/SAMA7G54_DFP/component
   name: pmc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: BC3A359CBBFB4EFC884B9E9D24E0E15D
-- generatedChecksum: 7BAAD4C0D910613CE13C31DB8E38F6A3
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: F18D26EED241BD780C0630ACE123E000
+- generatedChecksum: D5A06CA67FBD6B30803BA9145D6BEB56
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: pmc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 7BAAD4C0D910613CE13C31DB8E38F6A3
-- generatedChecksum: DF0C2ADEBCEC73561D5BB122E3236B58
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: D5A06CA67FBD6B30803BA9145D6BEB56
+- generatedChecksum: 86ABDACCE21FF41D6FAF045BBC5176A1
+  logicalPath: packs/SAMA7G54_DFP/component
   name: pwm.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: DF0C2ADEBCEC73561D5BB122E3236B58
-- generatedChecksum: 5A17E120E168CD0AF823CFCE213B230A
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 86ABDACCE21FF41D6FAF045BBC5176A1
+- generatedChecksum: 4F72A5ECCAA61B18185621D04C0D6054
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: pwm.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 5A17E120E168CD0AF823CFCE213B230A
-- generatedChecksum: 4F5AF2BF2AB344CC5A71CB2738DC8784
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 4F72A5ECCAA61B18185621D04C0D6054
+- generatedChecksum: 59B13C7A577769991246AA4142C71CA9
+  logicalPath: packs/SAMA7G54_DFP/component
   name: qspi.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 4F5AF2BF2AB344CC5A71CB2738DC8784
-- generatedChecksum: AAA3B3A4F42C3F8DD5ABE4D22854B217
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 59B13C7A577769991246AA4142C71CA9
+- generatedChecksum: A1B088B1A6CDF28A5D2771F798364A9B
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: qspi0.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: AAA3B3A4F42C3F8DD5ABE4D22854B217
-- generatedChecksum: CEA0D11208A6BE3CD2EF987CE28B4F18
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: A1B088B1A6CDF28A5D2771F798364A9B
+- generatedChecksum: 310CDD816F61C19D249CF1E56D2F62EC
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: qspi1.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: CEA0D11208A6BE3CD2EF987CE28B4F18
-- generatedChecksum: A22F7847810B34E65CBE49DC05C41915
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 310CDD816F61C19D249CF1E56D2F62EC
+- generatedChecksum: 04E037C8E7397FF4EB20934CB9A7FCBB
+  logicalPath: packs/SAMA7G54_DFP/component
   name: rstc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: A22F7847810B34E65CBE49DC05C41915
-- generatedChecksum: 1FC92CA85E1B3BD95A376E7155093FC0
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 04E037C8E7397FF4EB20934CB9A7FCBB
+- generatedChecksum: F2F8B6923845FBBFC7CD2BB5BF42F8CA
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: rstc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 1FC92CA85E1B3BD95A376E7155093FC0
-- generatedChecksum: F54D17EA6EE0F134FC66C775F56BD3A0
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: F2F8B6923845FBBFC7CD2BB5BF42F8CA
+- generatedChecksum: 2F4C7650BA211C5AF4621C1303C45E1E
+  logicalPath: packs/SAMA7G54_DFP/component
   name: rtc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: F54D17EA6EE0F134FC66C775F56BD3A0
-- generatedChecksum: D12868695109053A8076C8F26B52687D
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 2F4C7650BA211C5AF4621C1303C45E1E
+- generatedChecksum: DA820C5C54AE6F0FA92A1183085A7315
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: rtc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: D12868695109053A8076C8F26B52687D
-- generatedChecksum: 3A5F5128F4555A42AA653A6A43A0548B
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: DA820C5C54AE6F0FA92A1183085A7315
+- generatedChecksum: 91D36C534A0175F4857F2EC34DB0D9E0
+  logicalPath: packs/SAMA7G54_DFP/component
   name: rtt.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 3A5F5128F4555A42AA653A6A43A0548B
-- generatedChecksum: 3EEA4FFB0D6E19730B480C8D6AAFAA96
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 91D36C534A0175F4857F2EC34DB0D9E0
+- generatedChecksum: 1E6481C99604254A622D4A606726B576
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: rtt.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 3EEA4FFB0D6E19730B480C8D6AAFAA96
-- generatedChecksum: 9AC7D546189A2D28861E68FB6A010A62
-  logicalPath: packs\SAMA7G54_DFP
+  userChecksum: 1E6481C99604254A622D4A606726B576
+- generatedChecksum: 28E4EC90A122D2B032E8F9FEA47EE35D
+  logicalPath: packs/SAMA7G54_DFP
   name: sama7g54.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP
+  physicalPath: ../../packs/SAMA7G54_DFP
   security: NON_SECURE
   type: HEADER
-  userChecksum: 9AC7D546189A2D28861E68FB6A010A62
-- generatedChecksum: 14A4D46745117ADEDA81B93A16DDB2F7
-  logicalPath: packs\SAMA7G54_DFP\pio
+  userChecksum: 28E4EC90A122D2B032E8F9FEA47EE35D
+- generatedChecksum: FAD8B3C9D8C83F251F71CACF2B0DA5B4
+  logicalPath: packs/SAMA7G54_DFP/pio
   name: sama7g54.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\pio
+  physicalPath: ../../packs/SAMA7G54_DFP/pio
   security: NON_SECURE
   type: HEADER
-  userChecksum: 14A4D46745117ADEDA81B93A16DDB2F7
-- generatedChecksum: 36FD1A57E3F46A57FA362CFC52655410
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: FAD8B3C9D8C83F251F71CACF2B0DA5B4
+- generatedChecksum: F03708F9F0C722E09F8E60BD6EFA0EC6
+  logicalPath: packs/SAMA7G54_DFP/component
   name: sckc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 36FD1A57E3F46A57FA362CFC52655410
-- generatedChecksum: 81FF3ED9A30C1145007356CBDCC5897F
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: F03708F9F0C722E09F8E60BD6EFA0EC6
+- generatedChecksum: 080BB2E9B5B553109A9509DB7D0B873E
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: sckc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 81FF3ED9A30C1145007356CBDCC5897F
-- generatedChecksum: 43889A8AC4E0AF01154FF76D9119D4B7
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 080BB2E9B5B553109A9509DB7D0B873E
+- generatedChecksum: B5A942B5662E3963CFC43278A0A87568
+  logicalPath: packs/SAMA7G54_DFP/component
   name: sdmmc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 43889A8AC4E0AF01154FF76D9119D4B7
-- generatedChecksum: F9C6E3140215A274DE9588BAB795DC49
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: B5A942B5662E3963CFC43278A0A87568
+- generatedChecksum: 3C26DF7A340988FC2FAF9EC30572B8DC
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: sdmmc0.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: F9C6E3140215A274DE9588BAB795DC49
-- generatedChecksum: 881B50C55552520790DDA3B2017F8446
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 3C26DF7A340988FC2FAF9EC30572B8DC
+- generatedChecksum: 0953C0A6281475A87AB939534885F39D
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: sdmmc1.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 881B50C55552520790DDA3B2017F8446
-- generatedChecksum: CA3EDDED63D2DE2E20923A4034AB93D4
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 0953C0A6281475A87AB939534885F39D
+- generatedChecksum: F0B9E6EC98591136A93A2D60037BCCA0
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: sdmmc2.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: CA3EDDED63D2DE2E20923A4034AB93D4
-- generatedChecksum: FC86FA6352436C7D0E0AB31DA5614D5A
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: F0B9E6EC98591136A93A2D60037BCCA0
+- generatedChecksum: 2256539221BB49E54416F3C72EBE3CA1
+  logicalPath: packs/SAMA7G54_DFP/component
   name: secumod.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: FC86FA6352436C7D0E0AB31DA5614D5A
-- generatedChecksum: D40E10E53EDC4BE7E439E1D1C4CF1012
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 2256539221BB49E54416F3C72EBE3CA1
+- generatedChecksum: 4FA15574650AFD0920576242DF14B7EC
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: secumod.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: D40E10E53EDC4BE7E439E1D1C4CF1012
-- generatedChecksum: FDF8843A8F63692BB00B883B6BBA36AD
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 4FA15574650AFD0920576242DF14B7EC
+- generatedChecksum: 8C26025555836790AC92554D51248F9A
+  logicalPath: packs/SAMA7G54_DFP/component
   name: sfr.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: FDF8843A8F63692BB00B883B6BBA36AD
-- generatedChecksum: BBB9A229C0B82BB13F16209E9BE0A626
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 8C26025555836790AC92554D51248F9A
+- generatedChecksum: 31566FD897A6CCE069FD9C9D5FA50534
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: sfr.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: BBB9A229C0B82BB13F16209E9BE0A626
-- generatedChecksum: FC0ABF89905EDE7E067FB5F3CA1164EE
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 31566FD897A6CCE069FD9C9D5FA50534
+- generatedChecksum: C424C36D313B408B87876E48A6F13928
+  logicalPath: packs/SAMA7G54_DFP/component
   name: sfrbu.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: FC0ABF89905EDE7E067FB5F3CA1164EE
-- generatedChecksum: B4C4FF9BD7343A2E293D743859F21A98
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: C424C36D313B408B87876E48A6F13928
+- generatedChecksum: FDA101AAAB7E7EE480B3A20F93B040BB
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: sfrbu.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: B4C4FF9BD7343A2E293D743859F21A98
-- generatedChecksum: 5774161258186396892C0DC291CE1696
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: FDA101AAAB7E7EE480B3A20F93B040BB
+- generatedChecksum: 432933FD62C5F7EFB527A94D5B44A24C
+  logicalPath: packs/SAMA7G54_DFP/component
   name: sha.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 5774161258186396892C0DC291CE1696
-- generatedChecksum: 1649F55624DB3043F32AD041E364F107
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 432933FD62C5F7EFB527A94D5B44A24C
+- generatedChecksum: 36CC009646090525F175C8374012F945
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: sha.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 1649F55624DB3043F32AD041E364F107
-- generatedChecksum: 6E2158CE132949EC35089850AE009C15
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 36CC009646090525F175C8374012F945
+- generatedChecksum: 1234905DD361C4FD948891A747084A38
+  logicalPath: packs/SAMA7G54_DFP/component
   name: shdwc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 6E2158CE132949EC35089850AE009C15
-- generatedChecksum: 90300B75F53839BB7D96F6E225705CEF
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 1234905DD361C4FD948891A747084A38
+- generatedChecksum: 6577307901B16ABAEB24FFEAB845AB02
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: shdwc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 90300B75F53839BB7D96F6E225705CEF
-- generatedChecksum: 1F5DAE25D6E34ECEE64A1865D06A2BC5
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 6577307901B16ABAEB24FFEAB845AB02
+- generatedChecksum: 770B2EDBCE9244985E0C32AC7B397A9A
+  logicalPath: packs/SAMA7G54_DFP/component
   name: smc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 1F5DAE25D6E34ECEE64A1865D06A2BC5
-- generatedChecksum: FF93B32FC33BFC74CF69062E890D849A
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 770B2EDBCE9244985E0C32AC7B397A9A
+- generatedChecksum: 311442B7F4247C2CC2D3FF8EBB5269A4
+  logicalPath: packs/SAMA7G54_DFP/component
   name: spdifrx.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: FF93B32FC33BFC74CF69062E890D849A
-- generatedChecksum: 8C6CB2F2FEEDE077DEFE98D41FD3CD2A
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 311442B7F4247C2CC2D3FF8EBB5269A4
+- generatedChecksum: 2C019C8FA84234C6EEF437E3BE80AD4D
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: spdifrx.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 8C6CB2F2FEEDE077DEFE98D41FD3CD2A
-- generatedChecksum: 71D2A43505E14EED10A25886DA743E8E
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 2C019C8FA84234C6EEF437E3BE80AD4D
+- generatedChecksum: 57AD8692DF645023706B532C182052A1
+  logicalPath: packs/SAMA7G54_DFP/component
   name: spdiftx.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 71D2A43505E14EED10A25886DA743E8E
-- generatedChecksum: F5628BFD4897F92F5D2C04098C56615B
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 57AD8692DF645023706B532C182052A1
+- generatedChecksum: 289BC58116991ACBCA0961FBE11B191C
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: spdiftx.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: F5628BFD4897F92F5D2C04098C56615B
-- generatedChecksum: 21F9500DCDB609EFDF9372DAF0D7D922
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 289BC58116991ACBCA0961FBE11B191C
+- generatedChecksum: EA1702DCBB8467FF5CD5254C5B013689
+  logicalPath: packs/SAMA7G54_DFP/component
   name: ssc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 21F9500DCDB609EFDF9372DAF0D7D922
-- generatedChecksum: D559D1FD4B557A17A55BECC406161E0C
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: EA1702DCBB8467FF5CD5254C5B013689
+- generatedChecksum: 264DAFB4539E46EF6E1641FB47E7C69C
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: ssc0.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: D559D1FD4B557A17A55BECC406161E0C
-- generatedChecksum: 710E169B01EC9A04117F6731F8D5B72F
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 264DAFB4539E46EF6E1641FB47E7C69C
+- generatedChecksum: 12175D14FECD61D45D4A3A9BABB6826C
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: ssc1.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 710E169B01EC9A04117F6731F8D5B72F
-- generatedChecksum: 413C22E0D0C2921B806A32941B6F32BB
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 12175D14FECD61D45D4A3A9BABB6826C
+- generatedChecksum: FB3713EE345AE38C74F464EDF6DC05E1
+  logicalPath: packs/SAMA7G54_DFP/component
   name: syscwp.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 413C22E0D0C2921B806A32941B6F32BB
-- generatedChecksum: 7F68C06EF9640150936EBEAF5AC7F0E1
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: FB3713EE345AE38C74F464EDF6DC05E1
+- generatedChecksum: 208D121FE6697EC62AAEFC4D90FB2FB6
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: syscwp.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 7F68C06EF9640150936EBEAF5AC7F0E1
-- generatedChecksum: 69519C0D0BEA2ECB028F02B4319E5A74
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 208D121FE6697EC62AAEFC4D90FB2FB6
+- generatedChecksum: A7C624B46FF0F597E49401D908DD88DE
+  logicalPath: packs/SAMA7G54_DFP/component
   name: tc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 69519C0D0BEA2ECB028F02B4319E5A74
-- generatedChecksum: DB91E0D5B6A64278217192CD23FDB38A
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: A7C624B46FF0F597E49401D908DD88DE
+- generatedChecksum: 462101E485202E65DD15DF546B835055
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: tc0.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: DB91E0D5B6A64278217192CD23FDB38A
-- generatedChecksum: FB6400D9A12C3090F3D006A54203E955
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 462101E485202E65DD15DF546B835055
+- generatedChecksum: D6F2047E19FF4841CE12CCDD344260E9
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: tc1.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: FB6400D9A12C3090F3D006A54203E955
-- generatedChecksum: 65308C439E5F1A11432382DD13C5A289
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: D6F2047E19FF4841CE12CCDD344260E9
+- generatedChecksum: 6E46E1F981E682A1D7742D33D08399F2
+  logicalPath: packs/SAMA7G54_DFP/component
   name: tcpc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 65308C439E5F1A11432382DD13C5A289
-- generatedChecksum: E4369B7FF130BD81FA6008BA6A76293A
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 6E46E1F981E682A1D7742D33D08399F2
+- generatedChecksum: 86F59469FDD38D9321756A5CBB6DE316
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: tcpca.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: E4369B7FF130BD81FA6008BA6A76293A
-- generatedChecksum: C0ED4FC52679D0B06A2BAEE77F1AFBA5
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 86F59469FDD38D9321756A5CBB6DE316
+- generatedChecksum: 39E5C1EEA5F404586409E2259B37C93E
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: tcpcb.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: C0ED4FC52679D0B06A2BAEE77F1AFBA5
-- generatedChecksum: 317248A52930916844E094E1B77E4337
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 39E5C1EEA5F404586409E2259B37C93E
+- generatedChecksum: 68194D1243FF26861F61FB996F085686
+  logicalPath: packs/SAMA7G54_DFP/component
   name: tdes.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 317248A52930916844E094E1B77E4337
-- generatedChecksum: 72E86B5658F771D15E0AABD29F55DFCE
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 68194D1243FF26861F61FB996F085686
+- generatedChecksum: 393969C1DC7BFC8CCCF8C1386E248EAB
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: tdes.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 72E86B5658F771D15E0AABD29F55DFCE
-- generatedChecksum: C4D7AB2877290964206A00A252098D82
-  logicalPath: config\sam_a7g5_ek
+  userChecksum: 393969C1DC7BFC8CCCF8C1386E248EAB
+- generatedChecksum: A728555C3A6B2E26B175246489701C70
+  logicalPath: config/sam_a7g5_ek
   name: toolchain_specifics.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: C4D7AB2877290964206A00A252098D82
-- generatedChecksum: 8FE6971CAF4E2B80E46E917B4554A282
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: A728555C3A6B2E26B175246489701C70
+- generatedChecksum: 45DF9E8F178E0DE281A4E1202BED792E
+  logicalPath: packs/SAMA7G54_DFP/component
   name: trng.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 8FE6971CAF4E2B80E46E917B4554A282
-- generatedChecksum: 0ED00771751BEED0C2C97EC55E927517
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 45DF9E8F178E0DE281A4E1202BED792E
+- generatedChecksum: E8DEDBD99C5C49F79544C16DC603CFB3
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: trng.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 0ED00771751BEED0C2C97EC55E927517
-- generatedChecksum: D8CD2AA799EF86D300068E2EFE918F2B
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: E8DEDBD99C5C49F79544C16DC603CFB3
+- generatedChecksum: DDD3B146BFA2F6518CFBE60F5E836CF3
+  logicalPath: packs/SAMA7G54_DFP/component
   name: tzaesb.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: D8CD2AA799EF86D300068E2EFE918F2B
-- generatedChecksum: 3FFAB149B9F687D58E09576CA5ECD6D2
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: DDD3B146BFA2F6518CFBE60F5E836CF3
+- generatedChecksum: EE731EEDF94D5EBC75723D3FE78CF780
+  logicalPath: packs/SAMA7G54_DFP/component
   name: tzaesbasc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 3FFAB149B9F687D58E09576CA5ECD6D2
-- generatedChecksum: B3B88E7B49911E52102EC35CF56F8B7D
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: EE731EEDF94D5EBC75723D3FE78CF780
+- generatedChecksum: C019332A0A2E90269EFD65BC28A47087
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: tzaesbasc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: B3B88E7B49911E52102EC35CF56F8B7D
-- generatedChecksum: 8DD1311494C85FECCE70ABEFAB3195EE
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: C019332A0A2E90269EFD65BC28A47087
+- generatedChecksum: E194DD1519F2E6BEE897B730EC95170E
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: tzaesbns.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 8DD1311494C85FECCE70ABEFAB3195EE
-- generatedChecksum: 7D787DCDD7A2A5B0B7DA79AD407E5164
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: E194DD1519F2E6BEE897B730EC95170E
+- generatedChecksum: B377E04D37384925880442E8E644BBBE
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: tzaesbs.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 7D787DCDD7A2A5B0B7DA79AD407E5164
-- generatedChecksum: 3D0669CC388124558F5FAAF56A93D751
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: B377E04D37384925880442E8E644BBBE
+- generatedChecksum: CF21DBA7B0C6981B8132B346E9A30473
+  logicalPath: packs/SAMA7G54_DFP/component
   name: tzc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 3D0669CC388124558F5FAAF56A93D751
-- generatedChecksum: 1100E3C36A8B08F571F24F670A8871DA
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: CF21DBA7B0C6981B8132B346E9A30473
+- generatedChecksum: A66C5AE9E154EF02B97934746FEEB429
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: tzc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 1100E3C36A8B08F571F24F670A8871DA
-- generatedChecksum: BAF0F13C6E1F893E99234D48C86DB2FC
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: A66C5AE9E154EF02B97934746FEEB429
+- generatedChecksum: EA7DFBA7000871BE521048E06541A4B7
+  logicalPath: packs/SAMA7G54_DFP/component
   name: tzpm.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: BAF0F13C6E1F893E99234D48C86DB2FC
-- generatedChecksum: 8AF9AE433195512B346425581E9A7AF7
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: EA7DFBA7000871BE521048E06541A4B7
+- generatedChecksum: 7BD030B5FC67A02F5FF15BE50D638066
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: tzpm.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 8AF9AE433195512B346425581E9A7AF7
-- generatedChecksum: BFA05640E91E88FB5E42FDF627AAB8F8
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 7BD030B5FC67A02F5FF15BE50D638066
+- generatedChecksum: 6C1C968B2BA2748F48A33A5F5F715986
+  logicalPath: packs/SAMA7G54_DFP/component
   name: uddrc.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: BFA05640E91E88FB5E42FDF627AAB8F8
-- generatedChecksum: F51D4F28663DDB3EC3B7A24E9EBC858A
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 6C1C968B2BA2748F48A33A5F5F715986
+- generatedChecksum: CDD63A97D23C6A18D76FCCDE9840ECD2
+  logicalPath: packs/SAMA7G54_DFP/component
   name: udphs.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: F51D4F28663DDB3EC3B7A24E9EBC858A
-- generatedChecksum: 134D8A2BD521E7493CDA87CA2DA6A060
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: CDD63A97D23C6A18D76FCCDE9840ECD2
+- generatedChecksum: 648AA9416700E86FE8CEF880DEBE41CC
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: udphsa.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 134D8A2BD521E7493CDA87CA2DA6A060
-- generatedChecksum: 73682B44C32963824FD3E465714F8EEB
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 648AA9416700E86FE8CEF880DEBE41CC
+- generatedChecksum: DDE3C765D76AA199FF428E5901AEB7B0
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: udphsb.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 73682B44C32963824FD3E465714F8EEB
-- generatedChecksum: 1C409B2CF9010565741A8F9B20EFAE82
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: DDE3C765D76AA199FF428E5901AEB7B0
+- generatedChecksum: 4E1A2C4B6A057440AE7C190412DC0CE7
+  logicalPath: packs/SAMA7G54_DFP/component
   name: uhpfs.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 1C409B2CF9010565741A8F9B20EFAE82
-- generatedChecksum: 6ACA9F22693C1E06D54E663DCA667632
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: 4E1A2C4B6A057440AE7C190412DC0CE7
+- generatedChecksum: D3F4742CC2BFEC55DE15763A22D8DEB6
+  logicalPath: packs/SAMA7G54_DFP/component
   name: uhphs.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 6ACA9F22693C1E06D54E663DCA667632
-- generatedChecksum: 11DB3380895BB113E300A2A63455B8D6
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: D3F4742CC2BFEC55DE15763A22D8DEB6
+- generatedChecksum: 875FA368F3F5686CE23AEE8DDA29A7D6
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: uhphs_ehci.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 11DB3380895BB113E300A2A63455B8D6
-- generatedChecksum: F8F9CD371F6718EE38BC5B0D8E3D332B
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 875FA368F3F5686CE23AEE8DDA29A7D6
+- generatedChecksum: AB3D8BFCD26FEEE9B81F54B3FA8110D4
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: uhphs_ohci.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: F8F9CD371F6718EE38BC5B0D8E3D332B
-- generatedChecksum: D4D3E72976C6493430502110FE43E8B0
-  logicalPath: packs\SAMA7G54_DFP\component
+  userChecksum: AB3D8BFCD26FEEE9B81F54B3FA8110D4
+- generatedChecksum: E01EA696DBD3A96F48764F78CD2C3A3A
+  logicalPath: packs/SAMA7G54_DFP/component
   name: xdmac.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\component
+  physicalPath: ../../packs/SAMA7G54_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: D4D3E72976C6493430502110FE43E8B0
-- generatedChecksum: AFCEDD06D3DB5DB4A8407A9E427A308C
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: E01EA696DBD3A96F48764F78CD2C3A3A
+- generatedChecksum: C965AC7339701EE6107CBFFE527D1893
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: xdmac0.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: AFCEDD06D3DB5DB4A8407A9E427A308C
-- generatedChecksum: 7EEA71A84220270D86A3C3C8F7B146DA
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: C965AC7339701EE6107CBFFE527D1893
+- generatedChecksum: 3052A45855DCBFA95FB8342DDA8B8B39
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: xdmac1.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 7EEA71A84220270D86A3C3C8F7B146DA
-- generatedChecksum: 45CACE78D5D34F764FA2B7001F6829AC
-  logicalPath: packs\SAMA7G54_DFP\instance
+  userChecksum: 3052A45855DCBFA95FB8342DDA8B8B39
+- generatedChecksum: F6BE82098EA3E00EA4D940BA0960A667
+  logicalPath: packs/SAMA7G54_DFP/instance
   name: xdmac2.h
-  physicalPath: ..\..\packs\SAMA7G54_DFP\instance
+  physicalPath: ../../packs/SAMA7G54_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: 45CACE78D5D34F764FA2B7001F6829AC
+  userChecksum: F6BE82098EA3E00EA4D940BA0960A667
 - generatedChecksum: 4CDA62B4FD950990B6F3431C87438491
-  logicalPath: config\sam_a7g5_ek
+  logicalPath: config/sam_a7g5_ek
   name: ddr.ld
   physicalPath: ''
   security: NON_SECURE

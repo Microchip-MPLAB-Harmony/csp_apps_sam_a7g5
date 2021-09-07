@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2021-07-22T07:58:38Z */
+/* file generated from device description version 2021-07-26T12:51:16Z */
 #ifndef _SAMA7G_BSC_COMPONENT_H_
 #define _SAMA7G_BSC_COMPONENT_H_
 
