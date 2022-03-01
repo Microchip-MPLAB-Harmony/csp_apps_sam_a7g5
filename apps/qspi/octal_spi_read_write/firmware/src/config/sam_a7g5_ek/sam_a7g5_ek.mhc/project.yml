@@ -20,13 +20,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: DCEC7EB5A36C0E065768708EF5460514
-- generatedChecksum: 7E5ECA37AF294DF2109087830B3198A2
+- generatedChecksum: 838059B0B34D8112C6D1BE815013932B
   logicalPath: config/sam_a7g5_ek
   name: interrupts.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 7E5ECA37AF294DF2109087830B3198A2
+  userChecksum: 838059B0B34D8112C6D1BE815013932B
 - generatedChecksum: null
   logicalPath: ''
   name: main.c
@@ -48,13 +48,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: B566DF79ABA2D85DCC5FEFC5103C9E1E
-- generatedChecksum: 17D5F2E6C11B99BE79B5A2111023948B
+- generatedChecksum: 07B3ACDF66D4C53D1EBD8005EAC062A1
   logicalPath: config/sam_a7g5_ek/peripheral/gic
   name: plib_gic.c
   physicalPath: peripheral/gic
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 17D5F2E6C11B99BE79B5A2111023948B
+  userChecksum: 07B3ACDF66D4C53D1EBD8005EAC062A1
 - generatedChecksum: 6982F42602FEAD7E154F55EAC758BD86
   logicalPath: config/sam_a7g5_ek/peripheral/matrix
   name: plib_matrix.c
@@ -62,13 +62,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 6982F42602FEAD7E154F55EAC758BD86
-- generatedChecksum: 17CA8B8EE607F477426E2F74DC38D777
+- generatedChecksum: B567A5F22DA0D672C68A50DEABD45E6E
   logicalPath: config/sam_a7g5_ek/peripheral/mmu
   name: plib_mmu.c
   physicalPath: peripheral/mmu
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 17CA8B8EE607F477426E2F74DC38D777
+  userChecksum: B567A5F22DA0D672C68A50DEABD45E6E
 - generatedChecksum: C6F2CBFE18E16210377832AC2070498D
   logicalPath: config/sam_a7g5_ek/peripheral/pio
   name: plib_pio.c
@@ -83,20 +83,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: FB7269E3BA3E24DE24A0BFB9018F382D
-- generatedChecksum: 5FE2DE6A82842557A5CD98E0BE23D9E4
+- generatedChecksum: 821384C159C6D5012AEFA9CB6B5D4B65
   logicalPath: config/sam_a7g5_ek/peripheral/qspi
   name: plib_qspi0.c
   physicalPath: peripheral/qspi
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 5FE2DE6A82842557A5CD98E0BE23D9E4
-- generatedChecksum: 7806B30ECAE0D18D08CD583D8775530D
+  userChecksum: 821384C159C6D5012AEFA9CB6B5D4B65
+- generatedChecksum: 5B56F6750D4FD0810FD93C92FD0D900F
   logicalPath: config/sam_a7g5_ek/stdio
   name: xc32_monitor.c
   physicalPath: stdio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 7806B30ECAE0D18D08CD583D8775530D
+  userChecksum: 5B56F6750D4FD0810FD93C92FD0D900F
 - generatedChecksum: C157C52E4281546144C8D5076DD3BB2D
   logicalPath: packs/SAMA7G54_DFP/component
   name: acc.h
@@ -706,13 +706,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 7820F58B6A93538A790FA46ACE1D6470
-- generatedChecksum: B71668C25421FA88998A72CA3975FA83
+- generatedChecksum: F5C33EE6033C77323D9E50273A2F75C2
   logicalPath: config/sam_a7g5_ek/peripheral/gic
   name: plib_gic.h
   physicalPath: peripheral/gic
   security: NON_SECURE
   type: HEADER
-  userChecksum: B71668C25421FA88998A72CA3975FA83
+  userChecksum: F5C33EE6033C77323D9E50273A2F75C2
 - generatedChecksum: E8167D30D019275C8F2EEA14CD0EBC42
   logicalPath: config/sam_a7g5_ek/peripheral/matrix
   name: plib_matrix.h
@@ -741,20 +741,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 2968377C9E5C6CB9293A5A0D63830015
-- generatedChecksum: DEE9195A48F1F6A00DEBF78869C5607E
+- generatedChecksum: 82F7B8D2F3C7E5715C293522831719F9
   logicalPath: config/sam_a7g5_ek/peripheral/qspi
   name: plib_qspi0.h
   physicalPath: peripheral/qspi
   security: NON_SECURE
   type: HEADER
-  userChecksum: DEE9195A48F1F6A00DEBF78869C5607E
-- generatedChecksum: A300FAA50ABBF039F83EBDFE471C8551
+  userChecksum: 82F7B8D2F3C7E5715C293522831719F9
+- generatedChecksum: 14EE5EAB65EE55A0B0B1ED7589CCC520
   logicalPath: config/sam_a7g5_ek/peripheral/qspi
   name: plib_qspi_common.h
   physicalPath: peripheral/qspi
   security: NON_SECURE
   type: HEADER
-  userChecksum: A300FAA50ABBF039F83EBDFE471C8551
+  userChecksum: 14EE5EAB65EE55A0B0B1ED7589CCC520
 - generatedChecksum: F18D26EED241BD780C0630ACE123E000
   logicalPath: packs/SAMA7G54_DFP/component
   name: pmc.h

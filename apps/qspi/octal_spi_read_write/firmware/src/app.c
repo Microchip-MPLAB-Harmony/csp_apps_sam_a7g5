@@ -137,8 +137,9 @@ static APP_TRANSFER_STATUS APP_EnableOctaCmd(void)
     qspi_register_xfer.width = SINGLE_BIT_SPI;
     qspi_register_xfer.addr_len = ADDRL_32_BIT;
     qspi_register_xfer.addr_en = true;
+    qspi_register_xfer.address = 0x00000000;
 
-    if (QSPI0_RegisterWrite(&qspi_register_xfer, (uint32_t *)&tx_data, 1, 0x00000000) == false)
+    if (QSPI0_RegisterWrite(&qspi_register_xfer, (uint32_t *)&tx_data, 1) == false)
     {
         return APP_TRANSFER_ERROR_UNKNOWN;
     }
@@ -194,8 +195,9 @@ static APP_TRANSFER_STATUS APP_ReadJedecId(uint32_t *jedec_id)
     qspi_register_xfer.width = OCT_CMD;
     qspi_register_xfer.dummy_cycles = 20;
     qspi_register_xfer.protocol_type = OCTAFLASH;
+    qspi_register_xfer.address = 0;
 
-    if (QSPI0_RegisterRead(&qspi_register_xfer, jedec_id, 3, 0) == false)
+    if (QSPI0_RegisterRead(&qspi_register_xfer, jedec_id, 3) == false)
     {
         return APP_TRANSFER_ERROR_UNKNOWN;
     }
@@ -212,8 +214,9 @@ static APP_TRANSFER_STATUS APP_ReadStatus( uint32_t *rx_data, uint32_t rx_data_l
     qspi_register_xfer.width = OCT_CMD;
     qspi_register_xfer.dummy_cycles = 20;
     qspi_register_xfer.protocol_type = OCTAFLASH;
+    qspi_register_xfer.address = 0;
 
-    if (QSPI0_RegisterRead(&qspi_register_xfer, rx_data, rx_data_length, 0) == false)
+    if (QSPI0_RegisterRead(&qspi_register_xfer, rx_data, rx_data_length) == false)
     {
         return APP_TRANSFER_ERROR_UNKNOWN;
     }

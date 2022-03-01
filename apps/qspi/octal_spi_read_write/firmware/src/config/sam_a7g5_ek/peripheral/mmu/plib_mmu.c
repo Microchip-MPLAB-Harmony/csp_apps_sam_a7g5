@@ -102,6 +102,12 @@ static void mmu_configure(void *p_tlb)
     __ISB();
 }
 
+
+void icache_InvalidateAll(void)
+{
+    L1C_InvalidateICacheAll();
+}
+
 void icache_Enable(void)
 {
     uint32_t sctlr = __get_SCTLR();
