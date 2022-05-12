@@ -56,8 +56,10 @@
 // Section: Local functions
 // *****************************************************************************
 // *****************************************************************************
-static void acc_callback(bool output, void *context)
+static void acc_callback(bool output, uintptr_t context)
 {
+  (void)context;
+  
   if(output)
   {
     LED_BLUE_Set();
@@ -83,7 +85,7 @@ int main ( void )
     ADC_REGS->ADC_TEMPMR |= ADC_TEMPMR_TEMPON_Msk;
     
     /* Register callback */
-    ACC_RegisterCallback(acc_callback, NULL);
+    ACC_CallbackRegister(acc_callback, 0U);
     
     /* Enable ACC */
     ACC_Enable();

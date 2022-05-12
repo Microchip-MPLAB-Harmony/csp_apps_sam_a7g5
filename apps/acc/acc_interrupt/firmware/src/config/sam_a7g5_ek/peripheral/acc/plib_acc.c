@@ -54,7 +54,7 @@
 struct
 {
     ACC_CALLBACK pCallback;
-    void* pContext;
+    uintptr_t context;
 }accCallbackObj;
 
 
@@ -105,20 +105,19 @@ void ACC_Disable(void)
 }
 
 
-void ACC_RegisterCallback(ACC_CALLBACK pCallback, void* pContext)
+void ACC_CallbackRegister(ACC_CALLBACK pCallback, uintptr_t context)
 {
     accCallbackObj.pCallback = pCallback;
-    accCallbackObj.pContext = pContext;
+    accCallbackObj.context = context;
 }
 
 
 void ACC_InterruptHandler(void)
 {
     uint32_t isr = ACC_REGS->ACC_ISR;
-    if (((isr & ACC_ISR_MASK_Msk) != ACC_ISR_MASK_Msk) && 
+    if (((isr & ACC_ISR_MASK_Msk) == 0U) && 
          (accCallbackObj.pCallback != NULL))
     {
-        accCallbackObj.pCallback(((isr & ACC_ISR_SCO_Msk) == ACC_ISR_SCO_Msk),
-                                  accCallbackObj.pContext);
+        accCallbackObj.pCallback(((isr & ACC_ISR_SCO_Msk) != 0U), accCallbackObj.context);
     }
 }
