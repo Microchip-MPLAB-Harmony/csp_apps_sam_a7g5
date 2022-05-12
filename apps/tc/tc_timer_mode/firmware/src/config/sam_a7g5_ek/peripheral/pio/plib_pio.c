@@ -44,6 +44,8 @@
 #include "plib_pio.h"
 #include "interrupts.h"
 
+
+
 /******************************************************************************
   Function:
     PIO_Initialize ( void )
@@ -59,11 +61,11 @@ void PIO_Initialize ( void )
  /* Port A Peripheral function GPIO configuration */
 	PIOA_REGS->PIO_MSKR = 0x2000U;
 	PIOA_REGS->PIO_CFGR = 0x0U;
-	
+
  /* Port A Pin 13 configuration */
 	PIOA_REGS->PIO_MSKR = 0x2000U;
 	PIOA_REGS->PIO_CFGR = (PIOA_REGS->PIO_CFGR & (PIO_CFGR_FUNC_Msk)) | 0x100U;
-	
+
  /* Port A Latch configuration */
 	PIOA_REGS->PIO_CODR = 0x2000U;
 
@@ -72,11 +74,11 @@ void PIO_Initialize ( void )
  /* Port D Peripheral function GPIO configuration */
 	PIOD_REGS->PIO_MSKR = 0x100000U;
 	PIOD_REGS->PIO_CFGR = 0x0U;
-	
+
  /* Port D Pin 20 configuration */
 	PIOD_REGS->PIO_MSKR = 0x100000U;
 	PIOD_REGS->PIO_CFGR = (PIOD_REGS->PIO_CFGR & (PIO_CFGR_FUNC_Msk)) | 0x100U;
-	
+
  /* Port D Latch configuration */
 	PIOD_REGS->PIO_CODR = 0x100000U;
 
@@ -119,6 +121,7 @@ uint32_t PIO_PortRead(PIO_PORT port)
     return PIO_REGS->PIO_GROUP[port].PIO_PDSR;
 }
 
+
 // *****************************************************************************
 /* Function:
     void PIO_PortWrite (PIO_PORT port, uint32_t mask, uint32_t value);
@@ -135,6 +138,7 @@ void PIO_PortWrite(PIO_PORT port, uint32_t mask, uint32_t value)
     PIO_REGS->PIO_GROUP[port].PIO_ODSR = value;
 }
 
+
 // *****************************************************************************
 /* Function:
     uint32_t PIO_PortLatchRead ( PIO_PORT port )
@@ -149,6 +153,7 @@ uint32_t PIO_PortLatchRead(PIO_PORT port)
 {
     return PIO_REGS->PIO_GROUP[port].PIO_ODSR;
 }
+
 
 // *****************************************************************************
 /* Function:
@@ -210,7 +215,7 @@ void PIO_PortToggle(PIO_PORT port, uint32_t mask)
 void PIO_PortInputEnable(PIO_PORT port, uint32_t mask)
 {
     PIO_REGS->PIO_GROUP[port].PIO_MSKR = mask;
-    PIO_REGS->PIO_GROUP[port].PIO_CFGR &= ~PIO_CFGR_DIR_Msk;	
+    PIO_REGS->PIO_GROUP[port].PIO_CFGR &= ~PIO_CFGR_DIR_Msk;
 }
 
 // *****************************************************************************
