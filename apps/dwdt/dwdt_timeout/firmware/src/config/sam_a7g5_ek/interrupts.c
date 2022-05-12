@@ -80,6 +80,7 @@ void VirtTimer_Handler( void )           __attribute__((weak, alias("DefaultInte
 void LegacynFIQ_Handler( void )          __attribute__((weak, alias("DefaultInterruptHandler")));
 void NonSecPhysTimer_Handler( void )     __attribute__((weak, alias("DefaultInterruptHandler")));
 void LegacynIRQ_Handler( void )          __attribute__((weak, alias("DefaultInterruptHandler")));
+void DWDT_SW_Handler( void )             __attribute__((weak, alias("DefaultInterruptHandler")));
 void DWDT_NSW_Handler( void )            __attribute__((weak, alias("DefaultInterruptHandler")));
 void DWDT_NSW_ALARM_Handler( void )      __attribute__((weak, alias("DefaultInterruptHandler")));
 void SCKC_Handler( void )                __attribute__((weak, alias("DefaultInterruptHandler")));
@@ -221,7 +222,7 @@ void EIC_EXT_IRQ1_Handler( void )        __attribute__((weak, alias("DefaultInte
 
 /* Array of interrupt handlers indexed by its IRQn_Type IDs */
 
-peripheral_interrupt_handler_t gicPIVectorTable[171U] = 
+PPI_SPI_HANDLER gicPIVectorTable[171U] = 
 {
     NULL,
     NULL,
@@ -239,7 +240,7 @@ peripheral_interrupt_handler_t gicPIVectorTable[171U] =
     GENERIC_TIMER_InterruptHandler,
     NonSecPhysTimer_Handler,
     LegacynIRQ_Handler,
-    DWDT_SW_InterruptHandler,
+    DWDT_SW_Handler,
     DWDT_NSW_Handler,
     DWDT_NSW_ALARM_Handler,
     NULL,

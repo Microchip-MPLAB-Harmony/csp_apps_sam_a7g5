@@ -51,23 +51,11 @@
 #include "plib_dwdt.h"
 
 
-typedef struct
-{
-    DWDT_CALLBACK pCallback;
-    void* pContext;
-}dwdtCallbackObjType;
-
-dwdtCallbackObjType dwdtPSCallbackObj;
-
-
 static void DWDT_PS_Initialize(void)
 {
 
     /*Window level */
-    DWDT_REGS->DWDT_PS_WDT_WL = DWDT_PS_WDT_WL_PERIOD(1000U) | DWDT_PS_WDT_WL_RPTH(250U);
-
-    /* Interrupt Level */
-    DWDT_REGS->DWDT_NS_WDT_IL = DWDT_PS_WDT_IL_LVLTH(750U);
+    DWDT_REGS->DWDT_PS_WDT_WL = DWDT_PS_WDT_WL_PERIOD(1000U);
 
     /* Configure PS watchdog mode */
     uint32_t regVal = DWDT_REGS->DWDT_PS_WDT_MR & ~(DWDT_PS_WDT_MR_Msk);
@@ -75,12 +63,9 @@ static void DWDT_PS_Initialize(void)
     regVal |= (DWDT_PS_WDT_MR_PERIODRST_Msk);
 
     DWDT_REGS->DWDT_PS_WDT_MR = regVal;
-    
-    /* Enable selected PS WDT interrupts */
-    DWDT_REGS->DWDT_PS_WDT_IER = (DWDT_PS_WDT_IER_RPTHINT_Msk | DWDT_PS_WDT_IER_LVLINT_Msk);
 
     /* Disable PS WDT interrupts */
-    DWDT_REGS->DWDT_PS_WDT_IDR = (DWDT_PS_WDT_IDR_PERINT_Msk | DWDT_PS_WDT_IDR_NSPERINT_Msk | DWDT_PS_WDT_IDR_NSRPTHINT_Msk);
+    DWDT_REGS->DWDT_PS_WDT_IDR = (DWDT_PS_WDT_IDR_PERINT_Msk | DWDT_PS_WDT_IDR_RPTHINT_Msk | DWDT_PS_WDT_IDR_LVLINT_Msk | DWDT_PS_WDT_IDR_NSPERINT_Msk | DWDT_PS_WDT_IDR_NSRPTHINT_Msk);
 }
 
 
@@ -116,21 +101,4 @@ void DWDT_PS_Disable(void)
 {
     /* Disable PS watchdog */
     DWDT_REGS->DWDT_PS_WDT_MR |= DWDT_PS_WDT_MR_WDDIS_Msk;
-}
-
-
-void DWDT_PS_RegisterCallback(DWDT_CALLBACK pCallback, void* pContext)
-{
-    dwdtPSCallbackObj.pCallback = pCallback;
-    dwdtPSCallbackObj.pContext = pContext;
-}
-
-
-void DWDT_SW_InterruptHandler(void)
-{
-    uint32_t interruptStatus = DWDT_REGS->DWDT_PS_WDT_ISR;
-    if (dwdtPSCallbackObj.pCallback != NULL)
-    {
-        dwdtPSCallbackObj.pCallback(interruptStatus, dwdtPSCallbackObj.pContext);
-    }
 }

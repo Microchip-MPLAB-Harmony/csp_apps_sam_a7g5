@@ -55,10 +55,7 @@
 #include "definitions.h"                // SYS function prototypes
 
 volatile bool deadLockSwitchPressed = false;
-volatile bool repeatThresholdSwitchPressed = false;
-volatile uint32_t interruptCounter = 0U;
-volatile bool repeatThresholdInterrupt = false;
-volatile bool levelInterrupt = false;
+volatile uint32_t tickleCounter = 0U;
 
 void deadLockSet(PIO_PIN pin, uintptr_t context)
 {
@@ -66,33 +63,21 @@ void deadLockSet(PIO_PIN pin, uintptr_t context)
     (void)context;
     deadLockSwitchPressed = true;
 }
-
-void repeatThresholdSet(PIO_PIN pin, uintptr_t context)
-{
-    (void)pin;
-    (void)context;
-    repeatThresholdSwitchPressed = true;
-}
-
-void timerCallback(void* context)
+void timerCallback(uintptr_t context)
 {
     (void)context;
-    interruptCounter++;
-}
-
-void dwdt_ps_callback(uint32_t interruptStatus, void* context)
-{
-    if((interruptStatus & DWDT_PS_WDT_ISR_LVLINT_Msk) != 0U)
+    tickleCounter++;
+    if(!deadLockSwitchPressed)
     {
-        levelInterrupt = true;
+        LED_RED_Clear();
+        LED_BLUE_Toggle();
     }
-    if((interruptStatus & DWDT_PS_WDT_ISR_RPTHINT_Msk) != 0U)
+    else
     {
-        repeatThresholdInterrupt = true;
+        LED_BLUE_Clear();
+        LED_RED_Toggle();
     }
-    
 }
-
 
 // *****************************************************************************
 // *****************************************************************************
@@ -103,68 +88,33 @@ int main( void )
 {
     /* Initialize all modules */
     SYS_Initialize( NULL );
-    PIO_PinInterruptCallbackRegister( PB_USER1_PIN, deadLockSet, (uintptr_t) NULL );
+    PIO_PinInterruptCallbackRegister( PB_USER1_PIN, deadLockSet, 0U);
     PIO_PinInterruptEnable( PB_USER1_PIN );
-    
-    PIO_PinInterruptCallbackRegister( PB_USER2_PIN, repeatThresholdSet, (uintptr_t) NULL );
-    PIO_PinInterruptEnable( PB_USER2_PIN );
-    
-    GENERIC_TIMER_RegisterCallback(timerCallback, NULL);
-    
-    DWDT_PS_RegisterCallback(dwdt_ps_callback, NULL);
+    GENERIC_TIMER_CallbackRegister(timerCallback, 0U);
 
     printf( "\r\n-------------------------------------------------------------" );
     printf( "\r\n                          DWDT DEMO" );
     printf( "\r\n-------------------------------------------------------------" );
     printf( "\r\nFlashing LED indicates process is running\r\nPress SW1 " 
-            "to simulate a deadlock\r\nPress SW4 to simulate repeat "
-            "threshold violation\r\n");
-    
-    uint32_t toggleCount = interruptCounter;
-    uint32_t clearCount  = interruptCounter;
+            "to simulate a deadlock\r\n");
     
     GENERIC_TIMER_Start();
-    
     while( true )
     {
-        if ((interruptCounter - toggleCount) > 1U)
-        {        
-            toggleCount = interruptCounter;
-            // Led toggle with timer for reasonable blink
-            LED_BLUE_Toggle();
-        }
-        
-        if ((interruptCounter - clearCount) > 5U)
-        {  
-            clearCount = interruptCounter;
-            DWDT_PS_Clear();
-        }
-        
-        if (repeatThresholdSwitchPressed)
+        if(!deadLockSwitchPressed)
         {
-            repeatThresholdSwitchPressed = false;
-            DWDT_PS_Clear();
-        }
-        
-        if(repeatThresholdInterrupt)
-        {
-            printf("Repeat threshold interrupt occurred !!!!............\r\n");
-            repeatThresholdInterrupt = false;
-        }
-
-        if( deadLockSwitchPressed )
-        {   
-            printf( "Process starvation .................\r\n" );
-            printf( "\tDevice reset will occur in %lu seconds\r\n",
-                        (4 - (interruptCounter - clearCount)));
-            LED_BLUE_Set();
-            while( 1 )
+            if(tickleCounter > 2U)
             {
-                if(levelInterrupt)
-                {
-                    printf("Level interrupt occurred !!!!............\r\n");
-                    levelInterrupt = false;
-                }
+                DWDT_PS_Clear();
+                tickleCounter = 0U;
+            }
+        }
+        else
+        {
+            printf("\r\nProcess Starvation..............\r\nDevice Will Reset\r\n");
+            while(true)
+            {
+                /* Spin forever */
             }
         }
     }

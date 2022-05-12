@@ -64,25 +64,19 @@ The following table shows the target hardware for the application projects.
     - Stop : 1 Bit
     - Flow Control : None
 3. Build and run the application using its IDE
-4. Console should show the following output and LED should be blinking
+4. Console should show the following output and LED1 should be blinking
 
     ![output](images/output_dwdt_timeout_1.png)
 
-5. Press Switch 4 twice in close succession to emulate a repeat threshold violation (Pressing once may generate the violation however, pressing twice will guarantee it)
-6. Console should update the output as follows:
+5. Press Switch 1 to emulate a deadlock
+6. Console output is updated as follows and LED2 starts blinking:
 
-    ![output](images/output_dwdt_timeout_2.png)
+    ![output](images/output_dwdt_timeout_2.png)    
 
-7. Press Switch 1 to emulate a deadlock
-8. LED stops blinking and after few seconds console output will be updated as follows:
-
-    ![output](images/output_dwdt_timeout_3.png)    
-    *NOTE: Number of seconds can be between 1 and 4 based on the interval*
-
-9. Processor resets after specified time is elapsed
+7. LED2 stops blinking and "RomBOOT" is printed on the console indicating a processor reset
 
 Refer to the following table for Switch names for different boards:
 
-| Board                      | Switch 1 | Switch 4 |
-| -------------------------- | -------- |--------- |
-| [SAMA7G5 Evaluation Kit]() | SW1      | SW4      |
+| Board                      | Switch 1 | LED 1 | LED 2|
+| -------------------------- | -------- |--------- | ------- |
+| [SAMA7G5 Evaluation Kit]() | SW1      | RGB LED (Blue) | RGB LED (Red) |
