@@ -65,9 +65,9 @@ The following table shows the target hardware for the application projects.
 - SDMMC slot used for bootloading the application is SDMMC1 (J4)
 - Connect the USB port J7 on board to the computer using a micro USB cable (to power the board)
 - Connect the USB port J24 on board to the computer using a micro USB cable (to enable debug com port)
-- Use a jumper wire to connect Pin 11 of mikroBUS 2 connector (AD5 is mapped to Port Pin PC18) to 3.3 V or GND
-- Use a jumper wire to connect Pin 12 of mikroBUS 2 connector (AD6 is mapped to Port Pin PC19) to 3.3 V or GND
-- Use a jumper wire to connect Pin 15 of mikroBUS 2 connector (AD7 is mapped to Port Pin PC20) to 3.3 V or GND
+- Use a jumper wire to connect Pin 11(SDA) of mikroBUS 2 connector (AD5 is mapped to Port Pin PC18) to 3.3 V or GND
+- Use a jumper wire to connect Pin 12(SCL) of mikroBUS 2 connector (AD6 is mapped to Port Pin PC19) to 3.3 V or GND
+- Use a jumper wire to connect Pin 15(INT) of mikroBUS 2 connector (AD7 is mapped to Port Pin PC20) to 3.3 V or GND
 
 ## Running the Application
 

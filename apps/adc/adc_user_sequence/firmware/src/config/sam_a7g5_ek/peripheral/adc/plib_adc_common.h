@@ -98,27 +98,26 @@ typedef enum
 }ADC_CHANNEL_MASK;
 
 /* Analog channel numbers */
-typedef enum
-{
-    ADC_CH0 = 0U,
-    ADC_CH1 = 1U,
-    ADC_CH2 = 2U,
-    ADC_CH3 = 3U,
-    ADC_CH4 = 4U,
-    ADC_CH5 = 5U,
-    ADC_CH6 = 6U,
-    ADC_CH7 = 7U,
-    ADC_CH8 = 8U,
-    ADC_CH9 = 9U,
-    ADC_CH10 = 10U,
-    ADC_CH11 = 11U,
-    ADC_CH12 = 12U,
-    ADC_CH13 = 13U,
-    ADC_CH14 = 14U,
-    ADC_CH15 = 15U,
-    ADC_CH30 = 30U,
-    ADC_CH31 = 31U,
-}ADC_CHANNEL_NUM;
+
+#define     ADC_CH0   (0U)
+#define     ADC_CH1   (1U)
+#define     ADC_CH2   (2U)
+#define     ADC_CH3   (3U)
+#define     ADC_CH4   (4U)
+#define     ADC_CH5   (5U)
+#define     ADC_CH6   (6U)
+#define     ADC_CH7   (7U)
+#define     ADC_CH8   (8U)
+#define     ADC_CH9   (9U)
+#define     ADC_CH10   (10U)
+#define     ADC_CH11   (11U)
+#define     ADC_CH12   (12U)
+#define     ADC_CH13   (13U)
+#define     ADC_CH14   (14U)
+#define     ADC_CH15   (15U)
+#define     ADC_CH30  (30U)
+#define     ADC_CH31  (31U)
+typedef uint32_t ADC_CHANNEL_NUM;
 
 /* EOC Interrupt sources number */
 typedef enum
