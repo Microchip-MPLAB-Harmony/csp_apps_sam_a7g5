@@ -335,3 +335,15 @@ bool FLEXCOM9_USART_ReceiverIsReady( void )
 }
 
 
+bool FLEXCOM9_USART_TransmitComplete( void )
+{
+    bool status = false;
+
+    if (FLEXCOM9_REGS->FLEX_US_CSR & FLEX_US_CSR_TXEMPTY_Msk)
+    {
+        status = true;
+    }
+
+    return status;
+}
+

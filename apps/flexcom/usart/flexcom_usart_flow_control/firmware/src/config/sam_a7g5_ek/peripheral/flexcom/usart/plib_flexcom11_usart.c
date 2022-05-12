@@ -507,3 +507,15 @@ bool FLEXCOM11_USART_ReadAbort(void)
 }
 
 
+bool FLEXCOM11_USART_TransmitComplete( void )
+{
+    bool status = false;
+
+    if (FLEXCOM11_REGS->FLEX_US_CSR & FLEX_US_CSR_TXEMPTY_Msk)
+    {
+        status = true;
+    }
+
+    return status;
+}
+
