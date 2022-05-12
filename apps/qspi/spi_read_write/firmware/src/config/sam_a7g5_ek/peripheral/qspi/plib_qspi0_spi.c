@@ -222,6 +222,11 @@ bool QSPI0_IsBusy(void)
     return ((qspiObj.transferIsBusy) || ((QSPI0_REGS->QSPI_ISR & QSPI_ISR_TXEMPTY_Msk ) == 0));
 }
 
+bool QSPI0_IsTransmitterBusy(void)
+{
+    return ((QSPI0_REGS->QSPI_ISR & QSPI_ISR_TXEMPTY_Msk) == 0U)? true : false;
+}
+
 void QSPI0_InterruptHandler(void)
 {
     uint32_t dataBits ;
