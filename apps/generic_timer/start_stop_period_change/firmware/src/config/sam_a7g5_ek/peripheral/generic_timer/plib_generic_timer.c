@@ -56,7 +56,7 @@ static uint64_t compareDelta = 6000000UL;
 static struct callbackObject
 {
     GENERIC_TIMER_CALLBACK pCallback;
-    void* pContext;
+    uintptr_t context;
 }genericTimerCallbackObj;
 
 
@@ -82,8 +82,11 @@ void GENERIC_TIMER_DelayUs(uint32_t delay_us)
 {
     /* System counter is not expected to roll-over between two resets */
     uint64_t finalCount = GENERIC_TIMER_CounterValueGet() +
-      (uint64_t)((GENERIC_TIMER_FREQUENCY /1000000U) * delay_us);
-    while(GENERIC_TIMER_CounterValueGet() < finalCount);
+      (uint64_t)((GENERIC_TIMER_FREQUENCY /1000000UL) * (uint64_t)delay_us);
+    while(GENERIC_TIMER_CounterValueGet() < finalCount)
+	{
+		
+	}
 }
 
 
@@ -91,8 +94,11 @@ void GENERIC_TIMER_DelayMs(uint32_t delay_ms)
 {
     /* System counter is not expected to roll-over between two resets */
     uint64_t finalCount = GENERIC_TIMER_CounterValueGet() +
-      (uint64_t)((GENERIC_TIMER_FREQUENCY /1000U) * delay_ms);
-    while(GENERIC_TIMER_CounterValueGet() < finalCount);
+      (uint64_t)((GENERIC_TIMER_FREQUENCY /1000UL) * (uint64_t)delay_ms);
+    while(GENERIC_TIMER_CounterValueGet() < finalCount)
+	{
+		
+	}
 }
 
 void GENERIC_TIMER_Start(void)
@@ -125,10 +131,10 @@ void GENERIC_TIMER_Stop(void)
 }
 
 
-void GENERIC_TIMER_RegisterCallback(GENERIC_TIMER_CALLBACK pCallback, void* pContext)
+void GENERIC_TIMER_CallbackRegister(GENERIC_TIMER_CALLBACK pCallback, uintptr_t context)
 {
     genericTimerCallbackObj.pCallback = pCallback;
-    genericTimerCallbackObj.pContext = pContext;
+    genericTimerCallbackObj.context = context;
 }
 
 
@@ -138,7 +144,7 @@ void GENERIC_TIMER_InterruptHandler (void)
     PL1_SetPhysicalCompareValue(currentCompVal + compareDelta);
     if(genericTimerCallbackObj.pCallback != NULL)
     {
-        genericTimerCallbackObj.pCallback(genericTimerCallbackObj.pContext);
+        genericTimerCallbackObj.pCallback(genericTimerCallbackObj.context);
     }
 }
  

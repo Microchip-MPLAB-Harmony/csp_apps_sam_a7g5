@@ -67,9 +67,9 @@ void toggleTimer(PIO_PIN pin, uintptr_t context)
     }
 }
 
-void toggleLED(void* pContext)
+void toggleLED(uintptr_t context)
 {
-    (void)pContext;
+    (void)context;
     LED_BLUE_Toggle();
 }
 
@@ -95,7 +95,7 @@ int main ( void )
     /* Initialize all modules */
     SYS_Initialize ( NULL );
     
-    GENERIC_TIMER_RegisterCallback(toggleLED, NULL);
+    GENERIC_TIMER_CallbackRegister(toggleLED, 0U);
 
     PIO_PinInterruptCallbackRegister(USER_BUTTON_PIN, toggleTimer, 0U);
     PIO_PinInterruptEnable(USER_BUTTON_PIN);
