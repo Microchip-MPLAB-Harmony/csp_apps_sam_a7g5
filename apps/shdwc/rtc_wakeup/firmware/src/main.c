@@ -29,7 +29,7 @@
 
 volatile static bool switchPressed = false;
 
-void generic_timer_callback(void* context)
+void generic_timer_callback(uintptr_t context)
 {
    (void)context;
    LED_BLUE_Toggle();
@@ -62,7 +62,7 @@ int main ( void )
     sys_time.tm_mday = 15;
     sys_time.tm_wday = 1;
     
-    GENERIC_TIMER_RegisterCallback(generic_timer_callback, NULL);
+    GENERIC_TIMER_CallbackRegister(generic_timer_callback, 0U);
     
     RTC_TimeSet(&sys_time);
    
