@@ -46,9 +46,9 @@
 #define MAX_SPI_INTERRUPT_ID            186U
 #define SPURIOUS_INTERRUPT_ID           0x3FFU
 
-extern peripheral_interrupt_handler_t gicPIVectorTable[171U];
+extern PPI_SPI_HANDLER gicPIVectorTable[171U];
 
-static sgi_interrupt_handler_t gicSGIHandler = NULL;
+static SGI_HANDLER gicSGIHandler = NULL;
 
 void GIC_IRQHandler(uint32_t  iarRegVal)
 {
@@ -65,7 +65,7 @@ void GIC_IRQHandler(uint32_t  iarRegVal)
     /* Peripheral interrupt, dispatch peripheral handler if set */
     else if (irqNum <= MAX_SPI_INTERRUPT_ID)
     {
-        peripheral_interrupt_handler_t pHandler = gicPIVectorTable[ irqNum - TOTAL_SGI_INTERRUPTS];
+        PPI_SPI_HANDLER pHandler = gicPIVectorTable[ irqNum - TOTAL_SGI_INTERRUPTS];
         if(pHandler != NULL)
         {
             pHandler();
@@ -92,7 +92,7 @@ void GIC_FIQHandler(uint32_t  iarRegVal)
     /* Peripheral interrupt, dispatch peripheral handler if set */
     else if (irqNum <= MAX_SPI_INTERRUPT_ID)
     {
-        peripheral_interrupt_handler_t pHandler = gicPIVectorTable[ irqNum - TOTAL_SGI_INTERRUPTS];
+        PPI_SPI_HANDLER pHandler = gicPIVectorTable[ irqNum - TOTAL_SGI_INTERRUPTS];
         if(pHandler != NULL)
         {
             pHandler();
@@ -104,13 +104,13 @@ void GIC_FIQHandler(uint32_t  iarRegVal)
     }
 }
 
-void GIC_RegisterSGIInterruptHandler(sgi_interrupt_handler_t pHandler)
+void GIC_RegisterSGIInterruptHandler(SGI_HANDLER pHandler)
 {
     gicSGIHandler = pHandler;
 }
 
 
-void GIC_RegisterPeripheralInterruptHandler(IRQn_Type irqID, peripheral_interrupt_handler_t pHandler)
+void GIC_RegisterPeripheralInterruptHandler(IRQn_Type irqID, PPI_SPI_HANDLER pHandler)
 {
     gicPIVectorTable[ (uint32_t)irqID - TOTAL_SGI_INTERRUPTS] = pHandler;
 }
