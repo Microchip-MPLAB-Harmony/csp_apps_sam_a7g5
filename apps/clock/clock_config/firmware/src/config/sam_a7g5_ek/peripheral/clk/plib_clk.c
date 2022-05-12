@@ -77,9 +77,12 @@ static void initProgrammableClocks(void)
 {
     PMC_REGS->PMC_SCDR = PMC_SCDR_PCK_Msk;
     PMC_REGS->PMC_PCK[4] = PMC_PCK_CSS_SYSPLL |\
-                                PMC_PCK_PRES(39);
+                                PMC_PCK_PRES(39UL);
     PMC_REGS->PMC_SCER |= PMC_SCDR_PCK4_Msk;
-    while ((PMC_REGS->PMC_SR & PMC_SR_PCKRDY4_Msk) != PMC_SR_PCKRDY4_Msk);
+    while ((PMC_REGS->PMC_SR & PMC_SR_PCKRDY4_Msk) != PMC_SR_PCKRDY4_Msk)
+	{
+			
+	}
 }
 
 /*********************************************************************************
@@ -92,18 +95,18 @@ static void initPeripheralClocks(void)
         uint8_t clken;
         uint8_t gclken;
         uint8_t css;
-        uint8_t div;
+        uint8_t divs;
     } periphList[] =
     {
-        { ID_PIOA, 1, 0, 0, 0},
-        { ID_PIT64B0, 1, 0, 0, 0},
-        { ID_PERIPH_MAX + 1, 0, 0, 0, 0}//end of list marker
+        { ID_PIOA, 1U, 0U, 0U, 0U},
+        { ID_PIT64B0, 1U, 0U, 0U, 0U},
+        { ID_PERIPH_MAX + 1, 0U, 0U, 0U, 0U}//end of list marker
     };
 
-    int count = sizeof(periphList)/sizeof(periphList[0]);
-    for (int i = 0; i < count; i++)
+    uint32_t count = sizeof(periphList)/sizeof(periphList[0]);
+    for (uint32_t i = 0U; i < count; i++)
     {
-        if (periphList[i].id == (ID_PERIPH_MAX + 1))
+        if (periphList[i].id == (ID_PERIPH_MAX + 1U))
         {
             break;
         }
@@ -111,7 +114,7 @@ static void initPeripheralClocks(void)
         PMC_REGS->PMC_PCR = PMC_PCR_CMD_Msk |\
                             PMC_PCR_GCLKEN(periphList[i].gclken) |\
                             PMC_PCR_EN(periphList[i].clken) |\
-                            PMC_PCR_GCLKDIV(periphList[i].div) |\
+                            PMC_PCR_GCLKDIV(periphList[i].divs) |\
                             PMC_PCR_GCLKCSS(periphList[i].css) |\
                             PMC_PCR_PID(periphList[i].id);                
     }
@@ -132,7 +135,10 @@ static void initSystemCounter(void)
                             PMC_PCR_GCLKDIV(0U) |\
                             PMC_PCR_GCLKCSS_MAINCK |\
                             PMC_PCR_PID(29U);   
-        while((PMC_REGS->PMC_GCSR0 & PMC_GCSR0_GPID29_Msk) == 0U);
+        while((PMC_REGS->PMC_GCSR0 & PMC_GCSR0_GPID29_Msk) == 0U)
+		{
+			
+		}
     }
     
     /* Set timestamp count frequency */
