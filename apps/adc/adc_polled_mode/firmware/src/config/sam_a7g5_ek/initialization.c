@@ -135,15 +135,16 @@ void SYS_Initialize ( void* data )
     MMU_Initialize();
     Matrix_Initialize();
 
-	PIO_Initialize();
+    PIO_Initialize();
+
 
 
 
     PIT64B0_TimerInitialize();
 
-    ADC_Initialize();
     FLEXCOM3_USART_Initialize();
 
+    ADC_Initialize();
 
 
 

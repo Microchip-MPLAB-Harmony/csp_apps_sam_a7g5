@@ -59,7 +59,7 @@ The following table shows the target hardware for the application projects.
 - Connect the USB port J7 on board to the computer using a micro USB cable (to power the board)
 - Connect the USB port J24 on board to the computer using a micro USB cable (to enable debug com port)
 - AD5 pin is used for analog input
-- Use a jumper wire to connect Pin 11 of mikroBUS 2 connector (AD5 is used for input and is mapped to Port Pin PC18) to 3.3 V or GND
+- Use a jumper wire to connect Pin 11 (SDA pin) of mikroBUS 2 connector (AD5 is used for input and is mapped to Port Pin PC18) to 3.3 V or GND
 
 ## Running the Application
 

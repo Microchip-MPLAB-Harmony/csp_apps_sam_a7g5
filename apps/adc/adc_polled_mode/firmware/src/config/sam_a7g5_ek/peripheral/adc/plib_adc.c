@@ -52,7 +52,7 @@
 // *****************************************************************************
 
 /* Initialize ADC peripheral */
-void ADC_Initialize()
+void ADC_Initialize(void)
 {
     /* Software reset */
     ADC_REGS->ADC_CR = ADC_CR_SWRST_Msk;
@@ -74,43 +74,43 @@ void ADC_Initialize()
 /* Enable ADC channels */
 void ADC_ChannelsEnable (ADC_CHANNEL_MASK channelsMask)
 {
-    ADC_REGS->ADC_CHER = channelsMask;
+    ADC_REGS->ADC_CHER = (uint32_t)channelsMask;
 }
 
 /* Disable ADC channels */
 void ADC_ChannelsDisable (ADC_CHANNEL_MASK channelsMask)
 {
-    ADC_REGS->ADC_CHDR = channelsMask;
+    ADC_REGS->ADC_CHDR = (uint32_t)channelsMask;
 }
 
 /* Enable channel end of conversion interrupt */
 void ADC_ChannelsInterruptEnable (ADC_INTERRUPT_EOC_MASK channelsInterruptMask)
 {
-    ADC_REGS->ADC_EOC_IER = channelsInterruptMask;
+    ADC_REGS->ADC_EOC_IER = (uint32_t)channelsInterruptMask;
 }
 
 /* Disable channel end of conversion interrupt */
 void ADC_ChannelsInterruptDisable (ADC_INTERRUPT_EOC_MASK channelsInterruptMask)
 {
-    ADC_REGS->ADC_EOC_IDR = channelsInterruptMask;
+    ADC_REGS->ADC_EOC_IDR = (uint32_t)channelsInterruptMask;
 }
 
 /* Enable interrupt */
 void ADC_InterruptEnable (ADC_INTERRUPT_MASK interruptMask)
 {
-    ADC_REGS->ADC_IER = interruptMask;
+    ADC_REGS->ADC_IER = (uint32_t)interruptMask;
 }
 
 /* Disable interrupt */
 void ADC_InterruptDisable (ADC_INTERRUPT_MASK interruptMask)
 {
-    ADC_REGS->ADC_IDR = interruptMask;
+    ADC_REGS->ADC_IDR = (uint32_t)interruptMask;
 }
 
 /* Get interrupt status */
 bool ADC_InterruptStatusGet(ADC_INTERRUPT_MASK interruptMask)
 {
-    return ((ADC_REGS->ADC_ISR & interruptMask) != 0);
+    return ((ADC_REGS->ADC_ISR & (uint32_t)interruptMask) != 0U);
 }
 
 /* Start the conversion with software trigger */
@@ -122,13 +122,13 @@ void ADC_ConversionStart(void)
 /* Check if conversion result is available */
 bool ADC_ChannelResultIsReady(ADC_CHANNEL_NUM channel)
 {
-    return (ADC_REGS->ADC_EOC_ISR >> channel) & 0x1U;
+    return (((ADC_REGS->ADC_EOC_ISR >> channel) & 0x1U) != 0U);
 }
 
 /* Read the conversion result */
 uint16_t ADC_ChannelResultGet(ADC_CHANNEL_NUM channel)
 {
-    return ADC_REGS->ADC_CDR[channel];
+    return (uint16_t)ADC_REGS->ADC_CDR[channel];
 }
 
 /* Configure the user defined conversion sequence */
@@ -138,7 +138,7 @@ void ADC_ConversionSequenceSet(ADC_CHANNEL_NUM *channelList, uint8_t numChannel)
     ADC_REGS->ADC_SEQR1 = 0U;
     ADC_REGS->ADC_SEQR2 = 0U;
 
-    if (numChannel > 16)
+    if (numChannel > 16U)
     {
         return;
     }
@@ -159,13 +159,13 @@ void ADC_ConversionSequenceSet(ADC_CHANNEL_NUM *channelList, uint8_t numChannel)
 /* Sets Low threshold and High threshold in comparison window */
 void ADC_ComparisonWindowSet(uint16_t lowThreshold, uint16_t highThreshold)
 {
-    ADC_REGS->ADC_CWR = ADC_CWR_LOWTHRES(lowThreshold) | ADC_CWR_HIGHTHRES(highThreshold);
+    ADC_REGS->ADC_CWR = ADC_CWR_LOWTHRES((uint32_t)lowThreshold) | ADC_CWR_HIGHTHRES((uint32_t)highThreshold);
 }
 
 /* Check if Comparison event result is available */
 bool ADC_ComparisonEventResultIsReady(void)
 {
-    return (ADC_REGS->ADC_ISR >> ADC_ISR_COMPE_Pos) & 0x1U;
+    return (((ADC_REGS->ADC_ISR >> ADC_ISR_COMPE_Pos) & 0x1U) != 0U);
 }
 
 /* Restart the comparison function */
