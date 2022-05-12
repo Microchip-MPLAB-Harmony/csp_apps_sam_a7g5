@@ -70,11 +70,8 @@ The following table shows the target hardware for the application projects.
     - The LED is toggled when the value read from the Octal SPI Flash memory matched with the written value
     - The LED is turned ON when the value read from the Octal SPI Flash did not match with the written value
 
-Refer to the following table for clock output pin and LED name for different boards:
-
-efer to the following table for LED name:
+Refer to the following table for LED name:
 
 | Board             | LED Name                |
 | ----------------- | ----------------------- |
 | [SAMA7G5 Evaluation Kit]() | RGB_LED(Green) |
-|||

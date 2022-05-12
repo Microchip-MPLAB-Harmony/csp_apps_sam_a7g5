@@ -1197,6 +1197,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '200000000'}
   - type: Boolean
+    attributes: {id: PIO_MULTI_INSTANCE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: 'false'}
+  - type: Boolean
     attributes: {id: PIT64B0_CLOCK_ENABLE}
     children:
     - type: Values
