@@ -1,0 +1,81 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.csp_apps_sam_a7g5_tc_capture_mode",
+		"version": "3.0.0",
+		"displayName": "TC capture mode Example for SAM A7G5 Family",
+		"projectName": "tc_capture_mode_sam_a7g5_ek",
+		"shortDescription": "This example application shows how to use the TC module in capture mode to measure duty cycle and frequency of an external input.",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=6.0.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=4.1.0"
+			}
+		],
+		"dfp": {
+			"name": "CMSIS",
+			"semverRange": "^5.4.0"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.8.0"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "SAMA7G54",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit",
+				"SAM A7G5 Evaluation Kit"
+			],
+			[
+				"Harmony",
+				"Peripherals",
+				"TC"
+			],
+			[
+				"Peripherals",
+				"TC"
+			]
+		],
+		"peripherals": [
+			"TC"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"SAMA7G54",
+			"SAM A7G5 Family",
+			"TC",
+			"TCC",
+			"TMR",
+			"Timer",
+			"Counter"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}
