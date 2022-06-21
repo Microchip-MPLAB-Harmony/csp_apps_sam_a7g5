@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.csp_apps_sam_a7g5_flexcom_usart_ring_buffer_interrupt",
-		"version": "3.0.0",
+		"version": "3.2.0",
 		"displayName": "FLEXCOM USART ring buffer Example for SAM A7G5 Family",
 		"projectName": "flexcom_usart_ring_buffer_interrupt_sam_a7g5_ek",
 		"shortDescription": "This example application shows how to use the FLEXCOM peripheral in USART ring buffer mode.",
@@ -24,7 +24,7 @@
 		},
 		"configurator": {
 			"name": "MHC",
-			"semverRange": ">=3.8.0"
+			"semverRange": ">=3.8.5"
 		},
 		"device": {
 			"metaDataVersion": "1.0.0",

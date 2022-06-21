@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.csp_apps_sam_a7g5_pit64b_start_stop_period_change",
-		"version": "3.0.0",
+		"version": "3.2.0",
 		"displayName": "PIT64B start stop period change Example for SAM A7G5 Family",
 		"projectName": "pit64b_start_stop_period_change_sam_a7g5_ek",
 		"shortDescription": "This application shows how to use PIT64B counter in interrupt mode.",
@@ -24,7 +24,7 @@
 		},
 		"configurator": {
 			"name": "MHC",
-			"semverRange": ">=3.8.0"
+			"semverRange": ">=3.8.5"
 		},
 		"device": {
 			"metaDataVersion": "1.0.0",

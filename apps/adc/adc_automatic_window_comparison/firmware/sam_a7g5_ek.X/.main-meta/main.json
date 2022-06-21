@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.csp_apps_sam_a7g5_adc_automatic_window_comparison",
-		"version": "3.0.0",
+		"version": "3.2.0",
 		"displayName": "ADC automatic window comparison Example for SAM A7G5 Family",
 		"projectName": "adc_automatic_window_comparison_sam_a7g5_ek",
 		"shortDescription": "This example application shows how to sample an analog input in polled mode and send the converted data to console using automatic window comparison of converted values.",
@@ -24,7 +24,7 @@
 		},
 		"configurator": {
 			"name": "MHC",
-			"semverRange": ">=3.8.0"
+			"semverRange": ">=3.8.5"
 		},
 		"device": {
 			"metaDataVersion": "1.0.0",

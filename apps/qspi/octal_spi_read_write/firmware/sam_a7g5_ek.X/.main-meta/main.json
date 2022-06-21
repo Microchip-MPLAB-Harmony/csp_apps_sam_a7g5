@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.csp_apps_sam_a7g5_qspi_octal_spi_read_write",
-		"version": "3.0.0",
+		"version": "3.2.0",
 		"displayName": "QSPI Octal SPI read write Example for SAM A7G5 Family",
 		"projectName": "qspi_octal_spi_read_write_sam_a7g5_ek",
 		"shortDescription": "This example application shows how to use the QSPI Peripheral library to perform erase, write and read operation with the Octal SPI Flash memory using OctaFlash protocol.",
@@ -24,7 +24,7 @@
 		},
 		"configurator": {
 			"name": "MHC",
-			"semverRange": ">=3.8.0"
+			"semverRange": ">=3.8.5"
 		},
 		"device": {
 			"metaDataVersion": "1.0.0",

@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.csp_apps_sam_a7g5_tc_timer_mode",
-		"version": "3.0.0",
+		"version": "3.2.0",
 		"displayName": "TC timer mode Example for SAM A7G5 Family",
 		"projectName": "tc_timer_mode_sam_a7g5_ek",
 		"shortDescription": "This example application shows how to use the TC module in timer mode to generate periodic interrupt.",
@@ -24,7 +24,7 @@
 		},
 		"configurator": {
 			"name": "MHC",
-			"semverRange": ">=3.8.0"
+			"semverRange": ">=3.8.5"
 		},
 		"device": {
 			"metaDataVersion": "1.0.0",
