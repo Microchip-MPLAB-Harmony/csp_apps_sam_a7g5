@@ -64,7 +64,7 @@ uint8_t CACHE_ALIGN dstBuffer1[TRANSFER_SIZE];
 uint8_t CACHE_ALIGN dstBuffer2[TRANSFER_SIZE];
 
 volatile bool completeStatus = false;
-volatile bool errorStatus = false;
+static volatile bool errorStatus = false;
 volatile uint8_t transfersDone = 0U;
 volatile uint64_t timeStamp=0U;
 
