@@ -57,6 +57,7 @@ typedef void (*DWDT_CALLBACK) (uint32_t interruptStatus, uintptr_t context);
 
 void DWDT_Initialize(void);
 void DWDT_PS_Clear(void);
+void DWDT_PS_Disable(void);
 #ifdef __cplusplus // Provide C++ Compatibility
 }
 #endif /* __cplusplus */
