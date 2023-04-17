@@ -53,9 +53,9 @@ The following table shows the target hardware for the application projects.
 ## Running the Application
 
 1. Build and run the application using its IDE
-2. Connect a USB type C cable between USBB(J8) connector and test machine
+2. Connect a USB type C cable between USBB(J8) connector and the host computer
 3. Observe LED turning on
-4. Remove the USB type C cable connection between USBB(j8) and test machine
+4. Remove the USB type C cable connection between USBB(j8) and the host computer
 5. Observe LED turning off
 
 | Board| LED|
