@@ -64,7 +64,7 @@ The following table shows the target hardware for the application projects.
 
 ### [SAMA7G5 Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails)
 
-| Pin      | Observable characteristic of the waveform |
-|:---------:|: -----------------------------------------:|
+| Pin| Observable characteristic of the waveform|
+|:---------|:---------:|
 | TIOA(PE01)- (Pin 36 of RPi connector (J13)) | Active high output with 1 KHz frequency and 50% duty cycle |
 | TIOB(PE02)- (Pin 32 of RPi connector (J13)) | Active low output with 1 KHz frequency and 50% duty cycle |
