@@ -49,7 +49,7 @@ The following table shows the target hardware for the application projects.
     - A USB cable connected between "USBA" (J7) connector on the board and USB host port on PC 
     - A 5V DC adapter connected to "5V DC IN" (J1) connector on board 
 - Connect the Debug USB port (J24) on the board to the computer using a micro USB cable
-- Short TIOA pin of TC0, Channel 2 with TIOA pin of TC2, Channel 0
+- Short TIOA pin of TC0, Channel 2 (PE1, Pin 36 on RPi connector) with TIOA pin of TC1, Channel 0 (PE4, Pin 35 on RPi connector) 
 
 ## Running the Application
 
