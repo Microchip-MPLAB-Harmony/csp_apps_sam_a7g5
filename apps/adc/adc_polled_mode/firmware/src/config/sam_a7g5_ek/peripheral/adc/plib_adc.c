@@ -41,6 +41,7 @@
 // DOM-IGNORE-END
 #include "device.h"
 #include "plib_adc.h"
+#include "interrupts.h"
 
 #define ADC_SEQ1_CHANNEL_NUM (8U)
 
@@ -58,7 +59,7 @@ void ADC_Initialize(void)
     ADC_REGS->ADC_CR = ADC_CR_SWRST_Msk;
 
     /* Prescaler and different time settings as per CLOCK section  */
-    ADC_REGS->ADC_MR = ADC_MR_PRESCAL(4U) | ADC_MR_TRACKTIM(14U) | ADC_MR_STARTUP_SUT512 |
+    ADC_REGS->ADC_MR =  ADC_MR_PRESCAL(4U) | ADC_MR_TRACKTIM(14U) | ADC_MR_STARTUP_SUT512 |
         ADC_MR_TRANSFER(2U) | ADC_MR_ANACH_ALLOWED;
 
     /* Resolution and Sign mode of result */
@@ -138,20 +139,18 @@ void ADC_ConversionSequenceSet(ADC_CHANNEL_NUM *channelList, uint8_t numChannel)
     ADC_REGS->ADC_SEQR1 = 0U;
     ADC_REGS->ADC_SEQR2 = 0U;
 
-    if (numChannel > 16U)
+    if (numChannel < 16U)
     {
-        return;
-    }
-
-    for (channelIndex = 0U; channelIndex < numChannel; channelIndex++)
-    {
-        if (channelIndex < ADC_SEQ1_CHANNEL_NUM)
+        for (channelIndex = 0U; channelIndex < numChannel; channelIndex++)
         {
-            ADC_REGS->ADC_SEQR1 |= channelList[channelIndex] << (channelIndex * 4U);
-        }
-        else
-        {
-            ADC_REGS->ADC_SEQR2 |= channelList[channelIndex] << ((channelIndex - ADC_SEQ1_CHANNEL_NUM) * 4U);
+            if (channelIndex < ADC_SEQ1_CHANNEL_NUM)
+            {
+                ADC_REGS->ADC_SEQR1 |= channelList[channelIndex] << (channelIndex * 4U);
+            }
+            else
+            {
+                ADC_REGS->ADC_SEQR2 |= channelList[channelIndex] << ((channelIndex - ADC_SEQ1_CHANNEL_NUM) * 4U);
+            }
         }
     }
 }
