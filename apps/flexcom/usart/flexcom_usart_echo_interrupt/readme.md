@@ -44,15 +44,6 @@ The following table shows the target hardware for the application projects.
 
 ### Setting up [SAMA7G5 Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails)
 
-#### Addtional hardware required
-
-- SD Card with FAT32 file system
-
-#### Setting up the SD Card
-
-- Download harmony MPU bootstrap loader from this [location](firmware/at91bootstrap_sam_a7g5_ek.X/binaries/boot.bin)
-- Copy the downloaded boot loader binary( boot.bin) onto the SD card
-
 #### Setting up the board
 
 - Connect the Debug USB port on the board to the computer using a micro USB cable
@@ -60,23 +51,20 @@ The following table shows the target hardware for the application projects.
 ## Running the Application
 
 1. Build the application using its IDE
-2. Copy the output binary (named 'harmony.bin') onto the SD Card (Refer to the 'Setting up hardware' section above for setting up the SD card)
-3. Insert the SD card into SDMMC slot on the board (Refer to the 'Setting up hardware' section for the correct SDMMC slot)
-4. Open the Terminal application (Ex.:Tera term) on the computer.
-5. Connect to the EDBG/Jlink Virtual COM port and configure the serial settings as follows:
+2. Open the Terminal application (Ex.:Tera term) on the computer.
+3. Connect to the EDBG/Jlink Virtual COM port and configure the serial settings as follows:
     - Baud : 115200
     - Data : 8 Bits
     - Parity : None
     - Stop : 1 Bit
     - Flow Control : None
-6. Reset the board to run the application
-7. The console displays the following message
+4. The console displays the following message
 
     ![output](images/output_flexcom_usart_echo_blocking.png)
 
-8. Type 10 characters
-9. Entered characters will be echoed back and the LED is toggled
-10. The following table provides the LED names
+5. Type 10 characters
+6. Entered characters will be echoed back and the LED is toggled
+7. The following table provides the LED names
 
     | Board      | LED Name                                    |
     | ----------------- | ---------------------------------------------- |

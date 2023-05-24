@@ -52,8 +52,18 @@ The following table shows the target hardware for the application projects.
 
 ### Setting up [SAMA7G5 Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails)
 
-#### Setting up the board
 
+#### Addtional hardware required
+
+- SD Card with FAT32 file system
+
+#### Setting up the SD Card
+
+- Download harmony MPU bootstrap loader from this [location](firmware/at91bootstrap_sam_a7g5_ek.X/binaries/boot.bin)
+- Copy the downloaded boot loader binary( boot.bin) onto the SD card
+
+#### Setting up the board
+- SDMMC slot used for bootloading the application is SDMMC0 (J4)
 - Connect a 5V power supply to the board. This can be either of the following:
     - A USB cable connected between "USBA" (J7) connector on the board and USB host port on PC 
     - A 5V DC adapter connected to "5V DC IN" (J1) connector on board 
@@ -63,31 +73,34 @@ The following table shows the target hardware for the application projects.
 ## Running the Application
 
 1. Open the Terminal application (Ex.:Tera term) on the computer
-2. Connect to the EDBG/Jlink Virtual COM port and configure the serial settings as follows:
+2. Copy the output binary (named 'harmony.bin') onto the SD Card (Refer to the 'Setting up hardware' section above for setting up the SD card)
+3. Insert the SD card into SDMMC slot on the board (Refer to the 'Setting up hardware' section for the correct SDMMC slot)
+
+4. Connect to the EDBG/Jlink Virtual COM port and configure the serial settings as follows:
     - Baud : 115200
     - Data : 8 Bits
     - Parity : None
     - Stop : 1 Bit
     - Flow Control : None
-3. Build and program the application using its IDE
-4. RGB LED toggles in green color and console displays the following message
+5. Build and program the application using its IDE
+6. RGB LED toggles in green color and console displays the following message
 
     ![output_1](images/output_rstc_reset_cause_1.png)
 
     *NOTE: The cause for last reset will differ based on initial user action and is blanked out to avoid confusion*
 
-5. Press Switch SW1 to stop petting the watchdog
-6. RGB LED to should start toggling in blue color and the console display should be updated as follows
+7. Press Switch SW1 to stop petting the watchdog
+8. RGB LED to should start toggling in blue color and the console display should be updated as follows
 
     ![output_2](images/output_rstc_reset_cause_2.png)
 
-7. After a few seconds board will reset and the demo will start again (RGB LED toggles in Green color)
-8. Console shall display watchdog as the cause of reset
+9. After a few seconds board will reset and the demo will start again (RGB LED toggles in Green color)
+10. Console shall display watchdog as the cause of reset
 
     ![output_3](images/output_rstc_reset_cause_3.png)
 
     *NOTE: Application and bootloader shares the same console . Since bootloader messages are not relevant to the application,they are not shown here.*
-9. Press Switch SW2 to reset the board. Board will reset immediately and demo will start again (RGB LED toggles in Green color)
-10. Console displays user as the cause of reset
+11. Press Switch SW2 to reset the board. Board will reset immediately and demo will start again (RGB LED toggles in Green color)
+12. Console displays user as the cause of reset
 
     ![output_4](images/output_rstc_reset_cause_4.png)

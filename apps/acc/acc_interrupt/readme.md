@@ -46,7 +46,6 @@ The following table shows the target hardware for the application projects.
 
 #### Setting up the board
 
-- SDMMC slot used for bootloading the application is SDMMC1 (J4)
 - Connect the USB port J7 on board to the computer using a micro USB cable (to power the board)
 - Connect the USB port J24 on board to the computer using a micro USB cable (to enable debug com port)
 

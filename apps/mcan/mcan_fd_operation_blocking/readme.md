@@ -48,15 +48,6 @@ The following table shows the target hardware for the application projects.
 
 ### Setting up [SAMA7G5 Evaluation Kit]()
 
-#### Addtional hardware required
-
-- SD Card with FAT32 file system
-
-#### Setting up the SD Card
-
-- Download harmony MPU bootstrap loader from this [location](firmware/at91bootstrap_sam_a7g5_ek.X/binaries/boot.bin)
-- Copy the downloaded boot loader binary( boot.bin) onto the SD card
-
 #### Setting up the board
 
 - SDMMC slot used for bootloading the application is SDMMC1 (J4)
@@ -75,19 +66,17 @@ The following table shows the target hardware for the application projects.
 ## Running the Application
 
 1. Build the application using its IDE
-2. Copy the output binary (named 'harmony.bin') onto the each SD Card (Refer to the 'Setting up hardware' section above for setting up the SD card)
-3. Insert the SD card into SDMMC slot on the each board (Refer to the 'Setting up hardware' section for the correct SDMMC slot)
-4. Open the Terminal application (Ex.:Tera term) on the computer for each board.
-5. Connect to the Jlink Virtual COM port of both the boards and configure the serial settings as follows:
+2. Open the Terminal application (Ex.:Tera term) on the computer for each board.
+3. Connect to the Jlink Virtual COM port of both the boards and configure the serial settings as follows:
     - Baud : 115200
     - Data : 8 Bits
     - Parity : None
     - Stop : 1 Bit
     - Flow Control : None
-6. In the console associated with board 1, press "0" to transmit a CAN FD message
-7. Transmitted message description and status will be displayed in the console window of board 1
-8. Received message will be displayed in the console window of board 2
-9. Follow the sequence below to send and receive different messages:
+4. In the console associated with board 1, press "0" to transmit a CAN FD message
+5. Transmitted message description and status will be displayed in the console window of board 1
+6. Received message will be displayed in the console window of board 2
+7. Follow the sequence below to send and receive different messages:
     - Press '1' on board 1
     - Press '2' on board 1
     - Press '3' on board 1
@@ -97,6 +86,6 @@ The following table shows the target hardware for the application projects.
     - Press '2' on board 2
     - Press '3' on board 2
     - Press '4' on board 2
-10. If the steps are executed in this sequence, the final output in the consoles will be as below:
+8. If the steps are executed in this sequence, the final output in the consoles will be as below:
 
   ![output](images/output_mcan_fd_operation_blocking.png)

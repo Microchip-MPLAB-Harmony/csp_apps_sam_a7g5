@@ -44,18 +44,8 @@ The following table shows the target hardware for the application projects.
 
 ### Setting up [SAMA7G5 Evaluation Kit]()
 
-#### Addtional hardware required
-
-- SD Card with FAT32 file system
-
-#### Setting up the SD Card
-
-- Download harmony MPU bootstrap loader from this [location](firmware/at91bootstrap_sam_a7g5_ek.X/binaries/boot.bin)
-- Copy the downloaded boot loader binary( boot.bin) onto the SD card
-
 #### Setting up the board
 
-- SDMMC slot used for bootloading the application is SDMMC1 (J4)
 - Connect the USB port J7 on board to the computer using a micro USB cable (to power the board)
 - Connect the USB port J24 on board to the computer using a micro USB cable (to enable debug com port)
 - Open jumper J21 (DISABLE_BOOT)
@@ -63,10 +53,7 @@ The following table shows the target hardware for the application projects.
 ## Running the Application
 
 1. Build the application using its IDE
-2. Copy the output binary (named 'harmony.bin') onto the SD Card (Refer to the 'Setting up hardware' section above for setting up the SD card)
-3. Insert the SD card into SDMMC slot on the board (Refer to the 'Setting up hardware' section for the correct SDMMC slot)
-4. Reset the board to run the application
-5. LED indicates success or failure:
+2. LED indicates success or failure:
     - The LED is toggled when the value read from the Octal SPI Flash memory matched with the written value
     - The LED is turned ON when the value read from the Octal SPI Flash did not match with the written value
 
