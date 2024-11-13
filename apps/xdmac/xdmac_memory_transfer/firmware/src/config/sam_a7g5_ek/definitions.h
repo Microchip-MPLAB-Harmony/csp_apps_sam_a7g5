@@ -54,7 +54,6 @@
 #include "peripheral/clk/plib_clk.h"
 #include "peripheral/gic/plib_gic.h"
 #include "peripheral/mmu/plib_mmu.h"
-#include "peripheral/matrix/plib_matrix.h"
 #include "peripheral/pio/plib_pio.h"
 #include "peripheral/xdmac/plib_xdmac0.h"
 #include "peripheral/flexcom/usart/plib_flexcom3_usart.h"
@@ -68,13 +67,13 @@ extern "C" {
 // DOM-IGNORE-END
 
 /* Device Information */
-#define DEVICE_NAME			 "SAMA7G54"
-#define DEVICE_ARCH			 "CORTEX-A7"
-#define DEVICE_FAMILY		 "SAMA"
-#define DEVICE_SERIES		 "SAMA7G"
+#define DEVICE_NAME          "SAMA7G54"
+#define DEVICE_ARCH          "CORTEX-A7"
+#define DEVICE_FAMILY        "SAMA7"
+#define DEVICE_SERIES        "SAMA7G5"
 
 /* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 800000000
+#define CPU_CLOCK_FREQUENCY 800000000U
 
 // *****************************************************************************
 // *****************************************************************************
