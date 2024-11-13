@@ -514,7 +514,7 @@ QSPI0_MemoryRead(
         Single byte accesses at the head, or tail, are done as necessary.  The
         coding attempts to minimize unnecessary byte manipulations.
     */
-    uint8_t *   qspi_mem  = (uint8_t *) (QSPIMEM0_ADDR | address);
+    uint8_t *   qspi_mem  = (uint8_t *) (QSPI_MEM0_ADDR | address);
     uint8_t *   pRxBuffer = (uint8_t *) rx_data;
     uint32_t    numDstPreWordBytes;
     uint32_t    numSrcPreWordBytes;
@@ -623,7 +623,7 @@ QSPI0_MemoryRead(
         {
             qspi0_memcpy_8bit( pRxBuffer, qspi_mem, numSrcPostWordBytes );
         }
-        
+
         if((numWordTransferBytes + numSrcPostWordBytes) > 0U)
         {
             // Shift the data to right to its final destination buffer location
@@ -668,7 +668,7 @@ QSPI0_MemoryRead(
 
 bool QSPI0_MemoryWrite( qspi_memory_xfer_t *qspi_memory_xfer, uint32_t *tx_data, uint32_t tx_data_length, uint32_t address )
 {
-    uint32_t *qspi_mem = (uint32_t *)(QSPIMEM0_ADDR | address);
+    uint32_t *qspi_mem = (uint32_t *)(QSPI_MEM0_ADDR | address);
     uint32_t length_32bit, length_8bit;
 
     /* Number of Write Access */
