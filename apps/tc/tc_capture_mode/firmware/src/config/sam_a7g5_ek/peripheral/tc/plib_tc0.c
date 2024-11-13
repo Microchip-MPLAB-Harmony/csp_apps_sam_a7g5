@@ -70,7 +70,7 @@ void TC0_CH0_TimerInitialize(void)
 {
     /* clock selection and waveform selection */
     TC0_REGS->TC_CHANNEL[0].TC_CMR = TC_CMR_TCCLKS_TIMER_CLOCK5 | TC_CMR_WAVEFORM_WAVSEL_UP_RC | \
-                                                        TC_CMR_WAVE_Msk ;
+                                                        TC_CMR_WAVEFORM_WAVE_Msk ;
 
     /* write period */
     TC0_REGS->TC_CHANNEL[0].TC_RC = 32768U;
@@ -158,7 +158,7 @@ void TC0_CH2_CompareInitialize (void)
     /* Use peripheral clock */
     TC0_REGS->TC_CHANNEL[2].TC_EMR = TC_EMR_NODIVCLK_Msk;
     /* clock selection and waveform selection */
-    TC0_REGS->TC_CHANNEL[2].TC_CMR =  TC_CMR_WAVEFORM_WAVSEL_UP_RC | TC_CMR_WAVE_Msk | \
+    TC0_REGS->TC_CHANNEL[2].TC_CMR =  TC_CMR_WAVEFORM_WAVSEL_UP_RC | TC_CMR_WAVEFORM_WAVE_Msk | \
                 TC_CMR_WAVEFORM_ACPA_SET | TC_CMR_WAVEFORM_ACPC_CLEAR | TC_CMR_WAVEFORM_AEEVT_CLEAR\
            | TC_CMR_WAVEFORM_BCPB_NONE | TC_CMR_WAVEFORM_BCPC_NONE | TC_CMR_WAVEFORM_BEEVT_CLEAR ;
 
